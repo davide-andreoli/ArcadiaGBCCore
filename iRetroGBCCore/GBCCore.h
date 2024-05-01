@@ -8,5 +8,6 @@
 #ifndef GBCCore_h
 #define GBCCore_h
 
+void gbc_retro_init(void);
 
 #endif /* GBCCore_h */

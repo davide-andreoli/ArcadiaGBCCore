@@ -6,3 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
+void gbc_retro_init(void) {
+    //retro_init();
+}

@@ -15,4 +15,4 @@ FOUNDATION_EXPORT const unsigned char iRetroGBCCoreVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <iRetroGBCCore/PublicHeader.h>
 
-
+#import <iRetroGBCCore/GBCCore.h>
