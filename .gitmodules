@@ -1,0 +1,9 @@
+[submodule "gambatte-libretro"]
+	path = gambatte-libretro
+	url = https://github.com/libretro/gambatte-libretro.git
+[submodule "GBCCore/gambatte-libretro"]
+	path = GBCCore/gambatte-libretro
+	url = https://github.com/libretro/gambatte-libretro.git
+[submodule "iRetroGBCCore/gambatte-libretro"]
+	path = iRetroGBCCore/gambatte-libretro
+	url = https://github.com/libretro/gambatte-libretro.git
