@@ -60,6 +60,8 @@
 		95456A0C2BE24E8E00113B8A /* video_libretro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954569CF2BE24E8E00113B8A /* video_libretro.cpp */; };
 		95456A0D2BE24E8E00113B8A /* video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954569D02BE24E8E00113B8A /* video.cpp */; };
 		95456A0E2BE24E8E00113B8A /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 954569DB2BE24E8E00113B8A /* Makefile */; };
+		95456BE42BE2ADED00113B8A /* iRetroCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95456BE32BE2ADED00113B8A /* iRetroCore.framework */; };
+		95456BE52BE2ADED00113B8A /* iRetroCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95456BE32BE2ADED00113B8A /* iRetroCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,17 @@
 			files = (
 				9545692C2BE24E3600113B8A /* GBCCore.h in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95456BE62BE2ADED00113B8A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				95456BE52BE2ADED00113B8A /* iRetroCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -239,6 +252,7 @@
 		954569DC2BE24E8E00113B8A /* Makefile.common */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.common; sourceTree = "<group>"; };
 		954569DD2BE24E8E00113B8A /* Makefile.libretro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.libretro; sourceTree = "<group>"; };
 		954569DE2BE24E8E00113B8A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		95456BE32BE2ADED00113B8A /* iRetroCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iRetroCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +260,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95456BE42BE2ADED00113B8A /* iRetroCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +289,7 @@
 				954561912BE002B100113B8A /* iRetroGBCCoreTests */,
 				954569282BE24E3600113B8A /* GBCCore */,
 				954561842BE002B100113B8A /* Products */,
+				95456BE22BE2ADED00113B8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -706,6 +722,14 @@
 			path = "gambatte-libretro";
 			sourceTree = "<group>";
 		};
+		95456BE22BE2ADED00113B8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95456BE32BE2ADED00113B8A /* iRetroCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -728,6 +752,7 @@
 				9545617F2BE002B100113B8A /* Sources */,
 				954561802BE002B100113B8A /* Frameworks */,
 				954561812BE002B100113B8A /* Resources */,
+				95456BE62BE2ADED00113B8A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
