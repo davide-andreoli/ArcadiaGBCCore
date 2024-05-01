@@ -11,8 +11,6 @@
 		9545618E2BE002B100113B8A /* iRetroGBCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954561832BE002B100113B8A /* iRetroGBCCore.framework */; };
 		954561932BE002B100113B8A /* iRetroGBCCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954561922BE002B100113B8A /* iRetroGBCCoreTests.swift */; };
 		954561942BE002B100113B8A /* iRetroGBCCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 954561862BE002B100113B8A /* iRetroGBCCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		954564A92BE028AA00113B8A /* GBCCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 954564A82BE028AA00113B8A /* GBCCore.m */; };
-		954564AB2BE028B800113B8A /* GBCCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 954564AA2BE028B800113B8A /* GBCCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9545692B2BE24E3600113B8A /* GBCCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9545692A2BE24E3600113B8A /* GBCCore.m */; };
 		9545692C2BE24E3600113B8A /* GBCCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 954569292BE24E3600113B8A /* GBCCore.h */; };
 		954569E02BE24E8E00113B8A /* blipper.c in Sources */ = {isa = PBXBuildFile; fileRef = 9545694B2BE24E8E00113B8A /* blipper.c */; };
@@ -93,8 +91,6 @@
 		954561872BE002B100113B8A /* iRetroGBCCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = iRetroGBCCore.docc; sourceTree = "<group>"; };
 		9545618D2BE002B100113B8A /* iRetroGBCCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iRetroGBCCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		954561922BE002B100113B8A /* iRetroGBCCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRetroGBCCoreTests.swift; sourceTree = "<group>"; };
-		954564A82BE028AA00113B8A /* GBCCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBCCore.m; sourceTree = "<group>"; };
-		954564AA2BE028B800113B8A /* GBCCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBCCore.h; sourceTree = "<group>"; };
 		954569272BE24E3600113B8A /* libGBCCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGBCCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		954569292BE24E3600113B8A /* GBCCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBCCore.h; sourceTree = "<group>"; };
 		9545692A2BE24E3600113B8A /* GBCCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBCCore.m; sourceTree = "<group>"; };
@@ -295,8 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				954561862BE002B100113B8A /* iRetroGBCCore.h */,
-				954564A82BE028AA00113B8A /* GBCCore.m */,
-				954564AA2BE028B800113B8A /* GBCCore.h */,
 				954561872BE002B100113B8A /* iRetroGBCCore.docc */,
 			);
 			path = iRetroGBCCore;
@@ -719,7 +713,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				954564AB2BE028B800113B8A /* GBCCore.h in Headers */,
 				954561942BE002B100113B8A /* iRetroGBCCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -844,7 +837,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				954561882BE002B100113B8A /* iRetroGBCCore.docc in Sources */,
-				954564A92BE028AA00113B8A /* GBCCore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
