@@ -1503,7 +1503,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1521,6 +1521,7 @@
 					"$(SRCROOT)/GBCCore/gambatte-libretro/libgambatte/libretro",
 					"$(SRCROOT)/GBCCore/gambatte-libretro/libgambatte/src",
 					"$(SRCROOT)/GBCCore/gambatte-libretro/common",
+					/usr/local/include,
 				);
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1564,7 +1565,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1582,6 +1583,7 @@
 					"$(SRCROOT)/GBCCore/gambatte-libretro/libgambatte/libretro",
 					"$(SRCROOT)/GBCCore/gambatte-libretro/libgambatte/src",
 					"$(SRCROOT)/GBCCore/gambatte-libretro/common",
+					/usr/local/include,
 				);
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
