@@ -11,8 +11,7 @@
 		9545618E2BE002B100113B8A /* iRetroGBCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954561832BE002B100113B8A /* iRetroGBCCore.framework */; };
 		954561932BE002B100113B8A /* iRetroGBCCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954561922BE002B100113B8A /* iRetroGBCCoreTests.swift */; };
 		954561942BE002B100113B8A /* iRetroGBCCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 954561862BE002B100113B8A /* iRetroGBCCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9545692B2BE24E3600113B8A /* GBCCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9545692A2BE24E3600113B8A /* GBCCore.m */; };
-		9545692C2BE24E3600113B8A /* GBCCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 954569292BE24E3600113B8A /* GBCCore.h */; };
+		9545692B2BE24E3600113B8A /* GBCCoreImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9545692A2BE24E3600113B8A /* GBCCoreImplementation.m */; };
 		954569E02BE24E8E00113B8A /* blipper.c in Sources */ = {isa = PBXBuildFile; fileRef = 9545694B2BE24E8E00113B8A /* blipper.c */; };
 		954569E12BE24E8E00113B8A /* gambatte_log.c in Sources */ = {isa = PBXBuildFile; fileRef = 9545694F2BE24E8E00113B8A /* gambatte_log.c */; };
 		954569E22BE24E8E00113B8A /* libretro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954569542BE24E8E00113B8A /* libretro.cpp */; };
@@ -59,9 +58,13 @@
 		95456A0B2BE24E8E00113B8A /* tima.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954569CD2BE24E8E00113B8A /* tima.cpp */; };
 		95456A0C2BE24E8E00113B8A /* video_libretro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954569CF2BE24E8E00113B8A /* video_libretro.cpp */; };
 		95456A0D2BE24E8E00113B8A /* video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 954569D02BE24E8E00113B8A /* video.cpp */; };
-		95456A0E2BE24E8E00113B8A /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 954569DB2BE24E8E00113B8A /* Makefile */; };
 		95456BE42BE2ADED00113B8A /* iRetroCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95456BE32BE2ADED00113B8A /* iRetroCore.framework */; };
 		95456BE52BE2ADED00113B8A /* iRetroCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95456BE32BE2ADED00113B8A /* iRetroCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95456C3F2BE2B51D00113B8A /* iRetroGBCCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95456C3E2BE2B51D00113B8A /* iRetroGBCCore.swift */; };
+		95456C402BE2C1C000113B8A /* libGBCCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 954569272BE24E3600113B8A /* libGBCCore.a */; };
+		95456C522BE41E5500113B8A /* GBCCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95456C512BE41E1500113B8A /* GBCCore.h */; };
+		95456C582BE4BBE500113B8A /* GBCCoreImplementation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 954569292BE24E3600113B8A /* GBCCoreImplementation.h */; };
+		95456C992BE4CA4600113B8A /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95456C972BE4C7E300113B8A /* module.modulemap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,13 @@
 			remoteGlobalIDString = 954561822BE002B100113B8A;
 			remoteInfo = iRetroGBCCore;
 		};
+		95456C412BE2C1C100113B8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9545617A2BE002B100113B8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 954569262BE24E3500113B8A;
+			remoteInfo = GBCCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,7 +91,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				9545692C2BE24E3600113B8A /* GBCCore.h in CopyFiles */,
+				95456C522BE41E5500113B8A /* GBCCore.h in CopyFiles */,
+				95456C582BE4BBE500113B8A /* GBCCoreImplementation.h in CopyFiles */,
+				95456C992BE4CA4600113B8A /* module.modulemap in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +117,8 @@
 		9545618D2BE002B100113B8A /* iRetroGBCCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iRetroGBCCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		954561922BE002B100113B8A /* iRetroGBCCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRetroGBCCoreTests.swift; sourceTree = "<group>"; };
 		954569272BE24E3600113B8A /* libGBCCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGBCCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		954569292BE24E3600113B8A /* GBCCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBCCore.h; sourceTree = "<group>"; };
-		9545692A2BE24E3600113B8A /* GBCCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBCCore.m; sourceTree = "<group>"; };
+		954569292BE24E3600113B8A /* GBCCoreImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBCCoreImplementation.h; sourceTree = "<group>"; };
+		9545692A2BE24E3600113B8A /* GBCCoreImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBCCoreImplementation.m; sourceTree = "<group>"; };
 		954569302BE24E8E00113B8A /* crowdin_prep.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = crowdin_prep.yml; sourceTree = "<group>"; };
 		954569312BE24E8E00113B8A /* crowdin_translate.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = crowdin_translate.yml; sourceTree = "<group>"; };
 		954569342BE24E8E00113B8A /* gambatte-array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gambatte-array.h"; sourceTree = "<group>"; };
@@ -253,6 +265,9 @@
 		954569DD2BE24E8E00113B8A /* Makefile.libretro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.libretro; sourceTree = "<group>"; };
 		954569DE2BE24E8E00113B8A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		95456BE32BE2ADED00113B8A /* iRetroCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iRetroCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95456C3E2BE2B51D00113B8A /* iRetroGBCCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRetroGBCCore.swift; sourceTree = "<group>"; };
+		95456C512BE41E1500113B8A /* GBCCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBCCore.h; sourceTree = "<group>"; };
+		95456C972BE4C7E300113B8A /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95456BE42BE2ADED00113B8A /* iRetroCore.framework in Frameworks */,
+				95456C402BE2C1C000113B8A /* libGBCCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +324,7 @@
 			children = (
 				954561862BE002B100113B8A /* iRetroGBCCore.h */,
 				954561872BE002B100113B8A /* iRetroGBCCore.docc */,
+				95456C3E2BE2B51D00113B8A /* iRetroGBCCore.swift */,
 			);
 			path = iRetroGBCCore;
 			sourceTree = "<group>";
@@ -324,8 +341,10 @@
 			isa = PBXGroup;
 			children = (
 				954569DF2BE24E8E00113B8A /* gambatte-libretro */,
-				954569292BE24E3600113B8A /* GBCCore.h */,
-				9545692A2BE24E3600113B8A /* GBCCore.m */,
+				954569292BE24E3600113B8A /* GBCCoreImplementation.h */,
+				9545692A2BE24E3600113B8A /* GBCCoreImplementation.m */,
+				95456C512BE41E1500113B8A /* GBCCore.h */,
+				95456C972BE4C7E300113B8A /* module.modulemap */,
 			);
 			path = GBCCore;
 			sourceTree = "<group>";
@@ -757,6 +776,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				95456C422BE2C1C100113B8A /* PBXTargetDependency */,
 			);
 			name = iRetroGBCCore;
 			productName = iRetroGBCCore;
@@ -861,6 +881,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95456C3F2BE2B51D00113B8A /* iRetroGBCCore.swift in Sources */,
 				954561882BE002B100113B8A /* iRetroGBCCore.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -883,7 +904,6 @@
 				954569E22BE24E8E00113B8A /* libretro.cpp in Sources */,
 				954569F32BE24E8E00113B8A /* huc3.cpp in Sources */,
 				954569FA2BE24E8E00113B8A /* duty_unit.cpp in Sources */,
-				95456A0E2BE24E8E00113B8A /* Makefile in Sources */,
 				954569F12BE24E8E00113B8A /* cartridge_libretro.cpp in Sources */,
 				954569E82BE24E8E00113B8A /* fopen_utf8.c in Sources */,
 				95456A0D2BE24E8E00113B8A /* video.cpp in Sources */,
@@ -909,7 +929,7 @@
 				954569FC2BE24E8E00113B8A /* length_counter.cpp in Sources */,
 				954569F52BE24E8E00113B8A /* rtc.cpp in Sources */,
 				954569E32BE24E8E00113B8A /* net_serial.cpp in Sources */,
-				9545692B2BE24E3600113B8A /* GBCCore.m in Sources */,
+				9545692B2BE24E3600113B8A /* GBCCoreImplementation.m in Sources */,
 				954569E62BE24E8E00113B8A /* compat_strcasestr.c in Sources */,
 				95456A092BE24E8E00113B8A /* sound.cpp in Sources */,
 				954569FB2BE24E8E00113B8A /* envelope_unit.cpp in Sources */,
@@ -935,6 +955,11 @@
 			isa = PBXTargetDependency;
 			target = 954561822BE002B100113B8A /* iRetroGBCCore */;
 			targetProxy = 9545618F2BE002B100113B8A /* PBXContainerItemProxy */;
+		};
+		95456C422BE2C1C100113B8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 954569262BE24E3500113B8A /* GBCCore */;
+			targetProxy = 95456C412BE2C1C100113B8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1064,7 +1089,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1086,10 +1111,13 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/**";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davideandreoli.iRetroGBCCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
@@ -1108,7 +1136,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1130,10 +1158,13 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/**";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davideandreoli.iRetroGBCCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
@@ -1151,6 +1182,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32DR4Q2NF7;
@@ -1172,6 +1204,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32DR4Q2NF7;
@@ -1192,16 +1225,21 @@
 		9545692D2BE24E3600113B8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 32DR4Q2NF7;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/GBCCore/gambatte-libretro/libgambatte/libretro-common/include",
 					"$(SRCROOT)/GBCCore/gambatte-libretro/libgambatte/include",
 					"$(SRCROOT)/GBCCore/gambatte-libretro/libgambatte/libretro",
+					"${SRCROOT}/GBCCore/",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MODULEMAP_FILE = "$(SRCROOT)/GBCCore/module.modulemap";
+				MODULEMAP_PRIVATE_FILE = "";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DHAVE_NO_LANGEXTRA",
@@ -1209,7 +1247,7 @@
 					"-DHAVE_NETWORK",
 					"-D__LIBRETRO__",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1221,16 +1259,21 @@
 		9545692E2BE24E3600113B8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 32DR4Q2NF7;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/GBCCore/gambatte-libretro/libgambatte/libretro-common/include",
 					"$(SRCROOT)/GBCCore/gambatte-libretro/libgambatte/include",
 					"$(SRCROOT)/GBCCore/gambatte-libretro/libgambatte/libretro",
+					"${SRCROOT}/GBCCore/",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MODULEMAP_FILE = "$(SRCROOT)/GBCCore/module.modulemap";
+				MODULEMAP_PRIVATE_FILE = "";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DHAVE_NO_LANGEXTRA",
@@ -1238,7 +1281,7 @@
 					"-DHAVE_NETWORK",
 					"-D__LIBRETRO__",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

@@ -1,0 +1,11 @@
+//
+//  GBCCore.map.modulemap
+//  GBCCore
+//
+//  Created by Davide Andreoli on 02/05/24.
+//
+
+module GBCCore {
+    umbrella header "GBCCore.h"
+    export *
+}

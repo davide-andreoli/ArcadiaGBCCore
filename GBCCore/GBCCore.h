@@ -1,12 +1,8 @@
 //
-//  GBCCore.h
+//  GBCCore-umbrella.h
 //  GBCCore
 //
-//  Created by Davide Andreoli on 01/05/24.
+//  Created by Davide Andreoli on 02/05/24.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface GBCCore : NSObject
-
-@end
+#import "GBCCoreImplementation.h"

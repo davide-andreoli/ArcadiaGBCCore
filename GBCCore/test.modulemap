@@ -1,0 +1,12 @@
+//
+//  test.modulemap
+//  GBCCore
+//
+//  Created by Davide Andreoli on 03/05/24.
+//
+
+module <#ModuleName#> {
+    header "<#Header#>.h"
+
+    export *
+}

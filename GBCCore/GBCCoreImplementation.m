@@ -8,7 +8,7 @@
 #import "GBCCore.h"
 #import "libretro.h"
 
-@implementation GBCCore
+@implementation GBCCoreClass
 
 void gbc_retro_init(void) {
     retro_init();
