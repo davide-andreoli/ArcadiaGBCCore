@@ -7,11 +7,12 @@
 
 import Foundation
 import iRetroCore
-import GBCCore // Had to toggle Build Libraries for Distribution --> No for this to work, why?
+import GBCCore
 
 public struct iRetroGBC: iRetroCoreProtocol {
     
     public init() {
+        retro_init()
     }
     
 }
