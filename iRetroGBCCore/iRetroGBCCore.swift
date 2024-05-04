@@ -8,6 +8,7 @@
 import Foundation
 import iRetroCore
 import GBCCore
+import QuartzCore
 
 public struct iRetroGBC: iRetroCoreProtocol {
     
@@ -16,45 +17,74 @@ public struct iRetroGBC: iRetroCoreProtocol {
         retro_set_environment(libretro_environment_callback)
         retro_init()
         load_rom()
+        retro_set_video_refresh(libretro_video_refresh_callback)
+        retro_set_audio_sample(libretro_audio_sample_callback)
+        retro_set_audio_sample_batch(libretro_audio_sample_batch_callback)
+        retro_set_input_poll(libretro_input_poll_callback)
+        retro_set_input_state(libretro_input_state_callback)
+        let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
+            retro_run()
+        }
+        RunLoop.current.add(timer, forMode: .common)
+        RunLoop.current.run()
+        
     }
     
     func load_rom() {
-
-        var location = "/Users/davideandreoli/Developer/iRetro/Cores/iRetroGBCCore/iRetroGBCCore/Tetris.gbc".cString(using: String.Encoding.utf8)!
-        var fileData = loadBinaryContentOfFile(atPath: "/Users/davideandreoli/Developer/iRetro/Cores/iRetroGBCCore/iRetroGBCCore/Tetris.gbc")!
+        var filepath = Bundle.main.path(forResource: "Tetris", ofType: "gb")!
+        var location = filepath.cString(using: String.Encoding.utf8)!
+        var fileData = loadBinaryContentOfFile(atPath: filepath)!
         
-        var rom_info = retro_game_info()
+        let rom_name_cstr = (filepath as NSString).utf8String
+        let rom_name_cptr = UnsafePointer<CChar>(rom_name_cstr)
         
-        withUnsafePointer(to: location[0]) { locationPointer in
-            withUnsafePointer(to: fileData) { fileDataPointer in
-                rom_info = retro_game_info.init(path: locationPointer, data: fileDataPointer, size: MemoryLayout.size(ofValue: fileData), meta: locationPointer)
-            }
+        guard let contents = FileManager.default.contents(atPath: filepath),
+              let data = contents.withUnsafeBytes({ $0.baseAddress }) else {
+            fatalError("Failed to read file")
         }
         
-        withUnsafePointer(to: rom_info) { rom_infoPointer in
-            retro_load_game(rom_infoPointer)
-        }
+        var rom_info = retro_game_info(path: rom_name_cptr, data: data, size: contents.count, meta: nil)
         
-        
-
+        retro_load_game(&rom_info)
         
     }
     
-    let libretro_environment_callback: @convention(c) (UInt32, UnsafeMutableRawPointer?) -> Bool = {command, data in
+    let libretro_environment_callback: retro_environment_t = {command, data in
         print("libretro_environment_callback Called with command: \(command)")
         switch command {
         case 3:
             data?.storeBytes(of: true, as: Bool.self)
             return true
+        case 10:
+            print("TODO: Handle ENVIRONMENT_SET_PIXEL_FORMAT when we start drawing the the screen buffer")
+            return true
         default:
             return false
         }
-        return false
+    }
+    
+    let libretro_video_refresh_callback: retro_video_refresh_t = {_,_,_,_  in
+        print("video refresh")
+    }
+    let libretro_audio_sample_callback: retro_audio_sample_t = {_,_  in
+        print("audio sample")
+    }
+    let libretro_audio_sample_batch_callback: retro_audio_sample_batch_t = {_,_  in
+        print("audio sample batch")
+        return 0
+    }
+    let libretro_input_poll_callback: retro_input_poll_t = {
+        print("input poll")
+    }
+    
+    let libretro_input_state_callback: retro_input_state_t = {_,_,_,_ in
+        print("input state")
+        return Int16()
     }
     
     func loadBinaryContentOfFile(atPath filePath: String) -> Data? {
         
-        if let filepath = Bundle.main.url(forResource: "Tetris", withExtension: "gbc") {
+        if let filepath = Bundle.main.url(forResource: "Tetris", withExtension: "gb") {
             do {
                 let contents = try Data(contentsOf: filepath)
                 return contents
