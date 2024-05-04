@@ -8,12 +8,107 @@
 import Foundation
 import iRetroCore
 import GBCCore
-import QuartzCore
+import SwiftUI
+import Observation
+import CoreGraphics
 
-public struct iRetroGBC: iRetroCoreProtocol {
+func convertToUInt32Pixels(from xrgb8888Pixels: [UInt8]) -> [UInt32] {
+    var uint32Pixels = [UInt32]()
+    var index = 0
     
-    public init() {
+    while index < xrgb8888Pixels.count {
+        let x = UInt32(xrgb8888Pixels[index]) << 24
+        let r = UInt32(xrgb8888Pixels[index + 1]) << 16
+        let g = UInt32(xrgb8888Pixels[index + 2]) << 8
+        let b = UInt32(xrgb8888Pixels[index + 3])
         
+        let pixel = x | r | g | b
+        uint32Pixels.append(pixel)
+        
+        index += 4
+    }
+    
+    return uint32Pixels
+}
+
+func createCGImageFromUint8(pixels: [UInt8], width: Int, height: Int) -> CGImage? {
+    
+    let numBytes = pixels.count
+    let numComponents = 1 // Grayscale image has one component per pixel
+    let colorspace = CGColorSpaceCreateDeviceGray()
+    
+    guard let grayScaleData = CFDataCreate(nil, pixels, numBytes) else {
+        return nil
+    }
+
+    
+    guard let provider = CGDataProvider(data: grayScaleData) else {
+        return nil
+    }
+    
+    return CGImage(
+        width: width,
+        height: height,
+        bitsPerComponent: 8,
+        bitsPerPixel: 8 * numComponents,
+        bytesPerRow: width * numComponents,
+        space: colorspace,
+        bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.none.rawValue),
+        provider: provider,
+        decode: nil,
+        shouldInterpolate: true,
+        intent: CGColorRenderingIntent.defaultIntent)
+}
+
+func createCGImageFromXRGB8888(pixels: [UInt8], width: Int, height: Int) -> CGImage? {
+    print(pixels.count)
+    
+    let numBytes = pixels.count
+    let bytesPerPixel = 4 // Each pixel is represented by 4 bytes in XRGB8888 format
+    let numComponents = 3 // XRGB format has three components per pixel (Red, Green, Blue)
+    let bitsPerComponent = 8
+    
+    let colorspace = CGColorSpaceCreateDeviceRGB()
+    
+    guard let rgbData = CFDataCreate(nil, pixels, numBytes) else {
+        return nil
+    }
+    
+    guard let provider = CGDataProvider(data: rgbData) else {
+        return nil
+    }
+    
+    return CGImage(
+        width: width,
+        height: height,
+        bitsPerComponent: bitsPerComponent,
+        bitsPerPixel: bytesPerPixel * bitsPerComponent,
+        bytesPerRow: width * bytesPerPixel,
+        space: colorspace,
+        bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.noneSkipFirst.rawValue), // Skip the first byte (alpha)
+        provider: provider,
+        decode: nil,
+        shouldInterpolate: true,
+        intent: CGColorRenderingIntent.defaultIntent)
+}
+
+
+
+@Observable public class iRetroGBC: iRetroCoreProtocol {
+    
+    public static let sharedInstance = iRetroGBC()
+    
+    public var width = 160
+    public var height = 144
+    public var pitch = 2048
+    public var mainBuffer = [UInt8]()
+    public var currentFrame : CGImage? {
+        createCGImageFromXRGB8888(pixels: self.mainBuffer, width: 160, height: 144)
+    }
+
+        
+    public init() {
+
         retro_set_environment(libretro_environment_callback)
         retro_init()
         load_rom()
@@ -22,12 +117,24 @@ public struct iRetroGBC: iRetroCoreProtocol {
         retro_set_audio_sample_batch(libretro_audio_sample_batch_callback)
         retro_set_input_poll(libretro_input_poll_callback)
         retro_set_input_state(libretro_input_state_callback)
+        
+    }
+    
+    public func runRom() {
         let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             retro_run()
         }
         RunLoop.current.add(timer, forMode: .common)
         RunLoop.current.run()
-        
+    }
+    
+    public func startGameLoop() {
+        let gameLoopTimer = Timer.scheduledTimer(timeInterval: 1.0 / 60.0, target: self, selector: #selector(gameLoop), userInfo: nil, repeats: true)
+        RunLoop.current.add(gameLoopTimer, forMode: .default)
+    }
+    
+    @objc func gameLoop() {
+        retro_run()
     }
     
     func load_rom() {
@@ -56,15 +163,55 @@ public struct iRetroGBC: iRetroCoreProtocol {
             data?.storeBytes(of: true, as: Bool.self)
             return true
         case 10:
-            print("TODO: Handle ENVIRONMENT_SET_PIXEL_FORMAT when we start drawing the the screen buffer")
+            let format = retro_pixel_format(rawValue: data!.load(as: UInt32.self))
+            print("Environment Pixel format set as \(data!.load(as: UInt32.self))")
             return true
         default:
             return false
         }
     }
     
-    let libretro_video_refresh_callback: retro_video_refresh_t = {_,_,_,_  in
-        print("video refresh")
+    let libretro_video_refresh_callback: retro_video_refresh_t = {frameBufferData, width, height, pitch  in
+        guard let frameBufferPtr = frameBufferData else {
+            print("frame_buffer_data was null")
+            return
+        }
+        
+        print("libretro_set_video_refresh_callback, width: \(width), height: \(height), pitch: \(pitch)")
+        
+        print("Width: \(width), Height: \(height), Pitch: \(pitch)")
+        
+        let height = Int(height)
+        let width = Int(width)
+
+        let bytesPerPixel = 4 // Assuming XRGB8888 format
+        let lengthOfFrameBuffer = height * pitch
+
+        var pixelArray = [UInt8](repeating: 0, count: width * height * bytesPerPixel)
+
+        for y in 0..<height {
+            let rowOffset = y * pitch
+            for x in 0..<width {
+                let pixelOffset = rowOffset + x * bytesPerPixel
+                let rgbaOffset = y * width * bytesPerPixel + x * bytesPerPixel
+
+                // Assuming XRGB8888 format where each pixel is 4 bytes
+                let blue = frameBufferPtr.load(fromByteOffset: pixelOffset, as: UInt8.self)
+                let green = frameBufferPtr.load(fromByteOffset: pixelOffset + 1, as: UInt8.self)
+                let red = frameBufferPtr.load(fromByteOffset: pixelOffset + 2, as: UInt8.self)
+                let alpha = frameBufferPtr.load(fromByteOffset: pixelOffset + 3, as: UInt8.self)
+
+
+                pixelArray[rgbaOffset] = red
+                pixelArray[rgbaOffset + 1] = green
+                pixelArray[rgbaOffset + 2] = blue
+                pixelArray[rgbaOffset + 3] = alpha
+            }
+        }
+        sharedInstance.mainBuffer = pixelArray
+        //print(sharedInstance.mainBuffer)
+         
+         
     }
     let libretro_audio_sample_callback: retro_audio_sample_t = {_,_  in
         print("audio sample")
