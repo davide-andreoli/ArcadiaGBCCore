@@ -94,6 +94,7 @@ func createCGImageFromXRGB8888(pixels: [UInt8], width: Int, height: Int) -> CGIm
 
 
 
+
 @Observable public class iRetroGBC: iRetroCoreProtocol {
     
     public static let sharedInstance = iRetroGBC()
@@ -103,8 +104,9 @@ func createCGImageFromXRGB8888(pixels: [UInt8], width: Int, height: Int) -> CGIm
     public var pitch = 2048
     public var mainBuffer = [UInt8]()
     public var currentFrame : CGImage? {
-        createCGImageFromXRGB8888(pixels: self.mainBuffer, width: 160, height: 144)
+        createCGImageFromXRGB8888(pixels: self.mainBuffer, width: 320, height: 144)
     }
+    public var buttonsPressed : [Int] = []
 
         
     public init() {
@@ -118,6 +120,10 @@ func createCGImageFromXRGB8888(pixels: [UInt8], width: Int, height: Int) -> CGIm
         retro_set_input_poll(libretro_input_poll_callback)
         retro_set_input_state(libretro_input_state_callback)
         
+    }
+    
+    public func pressButton() {
+        iRetroGBC.sharedInstance.buttonsPressed.append(1)
     }
     
     public func runRom() {
@@ -134,6 +140,7 @@ func createCGImageFromXRGB8888(pixels: [UInt8], width: Int, height: Int) -> CGIm
     }
     
     @objc func gameLoop() {
+        iRetroGBC.sharedInstance.buttonsPressed = []
         retro_run()
     }
     
@@ -177,12 +184,12 @@ func createCGImageFromXRGB8888(pixels: [UInt8], width: Int, height: Int) -> CGIm
             return
         }
         
-        print("libretro_set_video_refresh_callback, width: \(width), height: \(height), pitch: \(pitch)")
-        
+
         print("Width: \(width), Height: \(height), Pitch: \(pitch)")
         
         let height = Int(height)
-        let width = Int(width)
+        let width = Int(width) * 2 //TODO: Understand why I need to multiply the width by two
+        let pitch = pitch
 
         let bytesPerPixel = 4 // Assuming XRGB8888 format
         let lengthOfFrameBuffer = height * pitch
@@ -202,16 +209,14 @@ func createCGImageFromXRGB8888(pixels: [UInt8], width: Int, height: Int) -> CGIm
                 let alpha = frameBufferPtr.load(fromByteOffset: pixelOffset + 3, as: UInt8.self)
 
 
-                pixelArray[rgbaOffset] = red
-                pixelArray[rgbaOffset + 1] = green
-                pixelArray[rgbaOffset + 2] = blue
-                pixelArray[rgbaOffset + 3] = alpha
+                pixelArray[rgbaOffset] = alpha
+                pixelArray[rgbaOffset + 1] = red
+                pixelArray[rgbaOffset + 2] = green
+                pixelArray[rgbaOffset + 3] = blue
             }
         }
         sharedInstance.mainBuffer = pixelArray
-        //print(sharedInstance.mainBuffer)
-         
-         
+                  
     }
     let libretro_audio_sample_callback: retro_audio_sample_t = {_,_  in
         print("audio sample")
@@ -224,9 +229,14 @@ func createCGImageFromXRGB8888(pixels: [UInt8], width: Int, height: Int) -> CGIm
         print("input poll")
     }
     
-    let libretro_input_state_callback: retro_input_state_t = {_,_,_,_ in
-        print("input state")
-        return Int16()
+    let libretro_input_state_callback: retro_input_state_t = {port,device,index,id in
+        print("libretro_set_input_state_callback port: \(port) device: \(device) index: \(index) id: \(id)")
+        for button in iRetroGBC.sharedInstance.buttonsPressed {
+            if button == Int(id) {
+                return Int16(button)
+            }
+        }
+        return Int16(0)
     }
     
     func loadBinaryContentOfFile(atPath filePath: String) -> Data? {
