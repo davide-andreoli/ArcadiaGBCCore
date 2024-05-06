@@ -122,8 +122,8 @@ func createCGImageFromXRGB8888(pixels: [UInt8], width: Int, height: Int) -> CGIm
         
     }
     
-    public func pressButton() {
-        iRetroGBC.sharedInstance.buttonsPressed.append(1)
+    public func pressButton(button: Int) {
+        iRetroGBC.sharedInstance.buttonsPressed.append(button)
     }
     
     public func runRom() {
@@ -140,7 +140,6 @@ func createCGImageFromXRGB8888(pixels: [UInt8], width: Int, height: Int) -> CGIm
     }
     
     @objc func gameLoop() {
-        iRetroGBC.sharedInstance.buttonsPressed = []
         retro_run()
     }
     
@@ -231,9 +230,10 @@ func createCGImageFromXRGB8888(pixels: [UInt8], width: Int, height: Int) -> CGIm
     
     let libretro_input_state_callback: retro_input_state_t = {port,device,index,id in
         print("libretro_set_input_state_callback port: \(port) device: \(device) index: \(index) id: \(id)")
-        for button in iRetroGBC.sharedInstance.buttonsPressed {
-            if button == Int(id) {
-                return Int16(button)
+        if !iRetroGBC.sharedInstance.buttonsPressed.isEmpty {
+            if iRetroGBC.sharedInstance.buttonsPressed[0] == Int(id) {
+                iRetroGBC.sharedInstance.buttonsPressed.remove(at: 0)
+                return Int16(1)
             }
         }
         return Int16(0)
