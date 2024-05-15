@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import iRetroCore
+import ArcadiaCore
 import GBCCore
 import SwiftUI
 import Observation
@@ -15,34 +15,34 @@ import CoreVideo
 import AVFoundation
 
 
-extension retro_game_geometry: iRetroGameGeometryProtocol {
+extension retro_game_geometry: ArcadiaGameGeometryProtocol {
     
 }
 
-extension retro_system_timing: iRetroSystemTimingProtocol {
+extension retro_system_timing: ArcadiaSystemTimingProtocol {
     
 }
 
-extension retro_system_av_info: iRetroAudioVideoInfoProtocol {
-    public typealias iRetroGeometryType = retro_game_geometry
-    public typealias iRetroTimingType = retro_system_timing
+extension retro_system_av_info: ArcadiaAudioVideoInfoProtocol {
+    public typealias ArcadiaGeometryType = retro_game_geometry
+    public typealias ArcadiaTimingType = retro_system_timing
     
 }
 
-extension retro_game_info: iRetroGameInfoProtocol {
+extension retro_game_info: ArcadiaGameInfoProtocol {
     
 }
 
 
-@Observable public class iRetroGBC: iRetroCoreProtocol {
+@Observable public class ArcadiaGBC: ArcadiaCoreProtocol {
 
-    public typealias iRetroCoreType = iRetroGBC
-    public typealias iRetroAudioVideoInfoType = retro_system_av_info
-    public typealias iRetroGameInfo = retro_game_info
-    public typealias iRetroGameGeometryType = retro_game_geometry
-    public typealias iRetroSystemTimingType = retro_system_timing
+    public typealias ArcadiaCoreType = ArcadiaGBC
+    public typealias ArcadiaAudioVideoInfoType = retro_system_av_info
+    public typealias ArcadiaGameInfo = retro_game_info
+    public typealias ArcadiaGameGeometryType = retro_game_geometry
+    public typealias ArcadiaSystemTimingType = retro_system_timing
     
-    public static var sharedInstance = iRetroGBC()
+    public static var sharedInstance = ArcadiaGBC()
     
     public var paused = false
     public var initialized = false
@@ -78,7 +78,7 @@ extension retro_game_info: iRetroGameInfoProtocol {
      
 }
 
-extension iRetroGBC {
+extension ArcadiaGBC {
     public func retroInit() {
         retro_init()
     }

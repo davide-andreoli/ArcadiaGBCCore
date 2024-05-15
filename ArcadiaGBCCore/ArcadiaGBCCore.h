@@ -8,10 +8,10 @@
 #import <Foundation/Foundation.h>
 
 //! Project version number for iRetroGBCCore.
-FOUNDATION_EXPORT double iRetroGBCCoreVersionNumber;
+FOUNDATION_EXPORT double ArcadiaGBCCoreVersionNumber;
 
 //! Project version string for iRetroGBCCore.
-FOUNDATION_EXPORT const unsigned char iRetroGBCCoreVersionString[];
+FOUNDATION_EXPORT const unsigned char ArcadiaGBCCoreVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <iRetroGBCCore/PublicHeader.h>
 

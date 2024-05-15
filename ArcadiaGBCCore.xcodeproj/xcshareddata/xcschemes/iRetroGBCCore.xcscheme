@@ -6,6 +6,22 @@
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "954561822BE002B100113B8A"
+               BuildableName = "ArcadiaGBCCore.framework"
+               BlueprintName = "ArcadiaGBCCore"
+               ReferencedContainer = "container:ArcadiaGBCCore.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -20,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9545618C2BE002B100113B8A"
-               BuildableName = "iRetroGBCCoreTests.xctest"
-               BlueprintName = "iRetroGBCCoreTests"
-               ReferencedContainer = "container:iRetroGBCCore.xcodeproj">
+               BuildableName = "ArcadiaGBCCoreTests.xctest"
+               BlueprintName = "ArcadiaGBCCoreTests"
+               ReferencedContainer = "container:ArcadiaGBCCore.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,6 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "954561822BE002B100113B8A"
+            BuildableName = "ArcadiaGBCCore.framework"
+            BlueprintName = "ArcadiaGBCCore"
+            ReferencedContainer = "container:ArcadiaGBCCore.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

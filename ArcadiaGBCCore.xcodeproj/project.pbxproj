@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		954561882BE002B100113B8A /* iRetroGBCCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 954561872BE002B100113B8A /* iRetroGBCCore.docc */; };
-		9545618E2BE002B100113B8A /* iRetroGBCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954561832BE002B100113B8A /* iRetroGBCCore.framework */; };
+		954561882BE002B100113B8A /* ArcadiaGBCCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 954561872BE002B100113B8A /* ArcadiaGBCCore.docc */; };
+		9545618E2BE002B100113B8A /* ArcadiaGBCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954561832BE002B100113B8A /* ArcadiaGBCCore.framework */; };
 		954561932BE002B100113B8A /* iRetroGBCCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954561922BE002B100113B8A /* iRetroGBCCoreTests.swift */; };
-		954561942BE002B100113B8A /* iRetroGBCCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 954561862BE002B100113B8A /* iRetroGBCCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95456C3F2BE2B51D00113B8A /* iRetroGBCCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95456C3E2BE2B51D00113B8A /* iRetroGBCCore.swift */; };
+		954561942BE002B100113B8A /* ArcadiaGBCCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 954561862BE002B100113B8A /* ArcadiaGBCCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95456C3F2BE2B51D00113B8A /* ArcadiaGBCCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95456C3E2BE2B51D00113B8A /* ArcadiaGBCCore.swift */; };
 		956F82922BE4DD5C0025FC5F /* GBCCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 956F82912BE4DD5C0025FC5F /* GBCCore.docc */; };
 		956F82982BE4DD5C0025FC5F /* GBCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956F828E2BE4DD5C0025FC5F /* GBCCore.framework */; };
 		956F829D2BE4DD5C0025FC5F /* GBCCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F829C2BE4DD5C0025FC5F /* GBCCoreTests.swift */; };
@@ -163,8 +163,8 @@
 		956F83E92BE4E2790025FC5F /* GBCCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 956F828E2BE4DD5C0025FC5F /* GBCCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		956F83ED2BE4E2FC0025FC5F /* GBCCoreHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 956F83EC2BE4E2D60025FC5F /* GBCCoreHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		956F83EF2BE4E5A60025FC5F /* GBCCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 956F83EE2BE4E5A60025FC5F /* GBCCore.h */; };
-		956F83F12BE4E67B0025FC5F /* iRetroCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956F83F02BE4E67B0025FC5F /* iRetroCore.framework */; };
-		956F83F22BE4E67B0025FC5F /* iRetroCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 956F83F02BE4E67B0025FC5F /* iRetroCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		956F842B2BF48EE40025FC5F /* ArcadiaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */; };
+		956F842C2BF48EE40025FC5F /* ArcadiaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,7 +198,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				956F83F22BE4E67B0025FC5F /* iRetroCore.framework in Embed Frameworks */,
+				956F842C2BF48EE40025FC5F /* ArcadiaCore.framework in Embed Frameworks */,
 				956F83E92BE4E2790025FC5F /* GBCCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -207,13 +207,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		954561832BE002B100113B8A /* iRetroGBCCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iRetroGBCCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		954561862BE002B100113B8A /* iRetroGBCCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iRetroGBCCore.h; sourceTree = "<group>"; };
-		954561872BE002B100113B8A /* iRetroGBCCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = iRetroGBCCore.docc; sourceTree = "<group>"; };
-		9545618D2BE002B100113B8A /* iRetroGBCCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iRetroGBCCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		954561832BE002B100113B8A /* ArcadiaGBCCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArcadiaGBCCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		954561862BE002B100113B8A /* ArcadiaGBCCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcadiaGBCCore.h; sourceTree = "<group>"; };
+		954561872BE002B100113B8A /* ArcadiaGBCCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ArcadiaGBCCore.docc; sourceTree = "<group>"; };
+		9545618D2BE002B100113B8A /* ArcadiaGBCCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcadiaGBCCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		954561922BE002B100113B8A /* iRetroGBCCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRetroGBCCoreTests.swift; sourceTree = "<group>"; };
 		95456BE32BE2ADED00113B8A /* iRetroCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iRetroCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95456C3E2BE2B51D00113B8A /* iRetroGBCCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRetroGBCCore.swift; sourceTree = "<group>"; };
+		95456C3E2BE2B51D00113B8A /* ArcadiaGBCCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadiaGBCCore.swift; sourceTree = "<group>"; };
 		956F828E2BE4DD5C0025FC5F /* GBCCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GBCCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		956F82902BE4DD5C0025FC5F /* GBCCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBCCore.h; sourceTree = "<group>"; };
 		956F82912BE4DD5C0025FC5F /* GBCCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = GBCCore.docc; sourceTree = "<group>"; };
@@ -367,6 +367,7 @@
 		956F83EC2BE4E2D60025FC5F /* GBCCoreHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBCCoreHeaders.h; sourceTree = "<group>"; };
 		956F83EE2BE4E5A60025FC5F /* GBCCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBCCore.h; path = GBCCore/GBCCore.h; sourceTree = SOURCE_ROOT; };
 		956F83F02BE4E67B0025FC5F /* iRetroCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iRetroCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ArcadiaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,7 +375,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				956F83F12BE4E67B0025FC5F /* iRetroCore.framework in Frameworks */,
+				956F842B2BF48EE40025FC5F /* ArcadiaCore.framework in Frameworks */,
 				956F83E82BE4E2790025FC5F /* GBCCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +384,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9545618E2BE002B100113B8A /* iRetroGBCCore.framework in Frameworks */,
+				9545618E2BE002B100113B8A /* ArcadiaGBCCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +409,8 @@
 		954561792BE002B100113B8A = {
 			isa = PBXGroup;
 			children = (
-				954561852BE002B100113B8A /* iRetroGBCCore */,
-				954561912BE002B100113B8A /* iRetroGBCCoreTests */,
+				954561852BE002B100113B8A /* ArcadiaGBCCore */,
+				954561912BE002B100113B8A /* ArcadiaGBCCoreTests */,
 				956F828F2BE4DD5C0025FC5F /* GBCCore */,
 				956F829B2BE4DD5C0025FC5F /* GBCCoreTests */,
 				954561842BE002B100113B8A /* Products */,
@@ -420,35 +421,36 @@
 		954561842BE002B100113B8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				954561832BE002B100113B8A /* iRetroGBCCore.framework */,
-				9545618D2BE002B100113B8A /* iRetroGBCCoreTests.xctest */,
+				954561832BE002B100113B8A /* ArcadiaGBCCore.framework */,
+				9545618D2BE002B100113B8A /* ArcadiaGBCCoreTests.xctest */,
 				956F828E2BE4DD5C0025FC5F /* GBCCore.framework */,
 				956F82972BE4DD5C0025FC5F /* GBCCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		954561852BE002B100113B8A /* iRetroGBCCore */ = {
+		954561852BE002B100113B8A /* ArcadiaGBCCore */ = {
 			isa = PBXGroup;
 			children = (
-				954561862BE002B100113B8A /* iRetroGBCCore.h */,
-				954561872BE002B100113B8A /* iRetroGBCCore.docc */,
-				95456C3E2BE2B51D00113B8A /* iRetroGBCCore.swift */,
+				954561862BE002B100113B8A /* ArcadiaGBCCore.h */,
+				954561872BE002B100113B8A /* ArcadiaGBCCore.docc */,
+				95456C3E2BE2B51D00113B8A /* ArcadiaGBCCore.swift */,
 			);
-			path = iRetroGBCCore;
+			path = ArcadiaGBCCore;
 			sourceTree = "<group>";
 		};
-		954561912BE002B100113B8A /* iRetroGBCCoreTests */ = {
+		954561912BE002B100113B8A /* ArcadiaGBCCoreTests */ = {
 			isa = PBXGroup;
 			children = (
 				954561922BE002B100113B8A /* iRetroGBCCoreTests.swift */,
 			);
-			path = iRetroGBCCoreTests;
+			path = ArcadiaGBCCoreTests;
 			sourceTree = "<group>";
 		};
 		95456BE22BE2ADED00113B8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */,
 				956F83F02BE4E67B0025FC5F /* iRetroCore.framework */,
 				95456BE32BE2ADED00113B8A /* iRetroCore.framework */,
 			);
@@ -874,7 +876,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				954561942BE002B100113B8A /* iRetroGBCCore.h in Headers */,
+				954561942BE002B100113B8A /* ArcadiaGBCCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,9 +963,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		954561822BE002B100113B8A /* iRetroGBCCore */ = {
+		954561822BE002B100113B8A /* ArcadiaGBCCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 954561972BE002B100113B8A /* Build configuration list for PBXNativeTarget "iRetroGBCCore" */;
+			buildConfigurationList = 954561972BE002B100113B8A /* Build configuration list for PBXNativeTarget "ArcadiaGBCCore" */;
 			buildPhases = (
 				9545617E2BE002B100113B8A /* Headers */,
 				9545617F2BE002B100113B8A /* Sources */,
@@ -976,14 +978,14 @@
 			dependencies = (
 				956F83EB2BE4E2790025FC5F /* PBXTargetDependency */,
 			);
-			name = iRetroGBCCore;
+			name = ArcadiaGBCCore;
 			productName = iRetroGBCCore;
-			productReference = 954561832BE002B100113B8A /* iRetroGBCCore.framework */;
+			productReference = 954561832BE002B100113B8A /* ArcadiaGBCCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9545618C2BE002B100113B8A /* iRetroGBCCoreTests */ = {
+		9545618C2BE002B100113B8A /* ArcadiaGBCCoreTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9545619A2BE002B100113B8A /* Build configuration list for PBXNativeTarget "iRetroGBCCoreTests" */;
+			buildConfigurationList = 9545619A2BE002B100113B8A /* Build configuration list for PBXNativeTarget "ArcadiaGBCCoreTests" */;
 			buildPhases = (
 				954561892BE002B100113B8A /* Sources */,
 				9545618A2BE002B100113B8A /* Frameworks */,
@@ -994,9 +996,9 @@
 			dependencies = (
 				954561902BE002B100113B8A /* PBXTargetDependency */,
 			);
-			name = iRetroGBCCoreTests;
+			name = ArcadiaGBCCoreTests;
 			productName = iRetroGBCCoreTests;
-			productReference = 9545618D2BE002B100113B8A /* iRetroGBCCoreTests.xctest */;
+			productReference = 9545618D2BE002B100113B8A /* ArcadiaGBCCoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		956F828D2BE4DD5C0025FC5F /* GBCCore */ = {
@@ -1060,7 +1062,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9545617D2BE002B100113B8A /* Build configuration list for PBXProject "iRetroGBCCore" */;
+			buildConfigurationList = 9545617D2BE002B100113B8A /* Build configuration list for PBXProject "ArcadiaGBCCore" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1073,8 +1075,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				954561822BE002B100113B8A /* iRetroGBCCore */,
-				9545618C2BE002B100113B8A /* iRetroGBCCoreTests */,
+				954561822BE002B100113B8A /* ArcadiaGBCCore */,
+				9545618C2BE002B100113B8A /* ArcadiaGBCCoreTests */,
 				956F828D2BE4DD5C0025FC5F /* GBCCore */,
 				956F82962BE4DD5C0025FC5F /* GBCCoreTests */,
 			);
@@ -1144,8 +1146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95456C3F2BE2B51D00113B8A /* iRetroGBCCore.swift in Sources */,
-				954561882BE002B100113B8A /* iRetroGBCCore.docc in Sources */,
+				95456C3F2BE2B51D00113B8A /* ArcadiaGBCCore.swift in Sources */,
+				954561882BE002B100113B8A /* ArcadiaGBCCore.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1224,7 +1226,7 @@
 /* Begin PBXTargetDependency section */
 		954561902BE002B100113B8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 954561822BE002B100113B8A /* iRetroGBCCore */;
+			target = 954561822BE002B100113B8A /* ArcadiaGBCCore */;
 			targetProxy = 9545618F2BE002B100113B8A /* PBXContainerItemProxy */;
 		};
 		956F829A2BE4DD5C0025FC5F /* PBXTargetDependency */ = {
@@ -1666,7 +1668,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9545617D2BE002B100113B8A /* Build configuration list for PBXProject "iRetroGBCCore" */ = {
+		9545617D2BE002B100113B8A /* Build configuration list for PBXProject "ArcadiaGBCCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				954561952BE002B100113B8A /* Debug */,
@@ -1675,7 +1677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		954561972BE002B100113B8A /* Build configuration list for PBXNativeTarget "iRetroGBCCore" */ = {
+		954561972BE002B100113B8A /* Build configuration list for PBXNativeTarget "ArcadiaGBCCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				954561982BE002B100113B8A /* Debug */,
@@ -1684,7 +1686,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9545619A2BE002B100113B8A /* Build configuration list for PBXNativeTarget "iRetroGBCCoreTests" */ = {
+		9545619A2BE002B100113B8A /* Build configuration list for PBXNativeTarget "ArcadiaGBCCoreTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9545619B2BE002B100113B8A /* Debug */,
