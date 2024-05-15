@@ -15,15 +15,15 @@ import CoreVideo
 import AVFoundation
 
 
-extension retro_game_geometry: iRetroGameGeometry {
+extension retro_game_geometry: iRetroGameGeometryProtocol {
     
 }
 
-extension retro_system_timing: iRetroSystemTiming {
+extension retro_system_timing: iRetroSystemTimingProtocol {
     
 }
 
-extension retro_system_av_info: iRetroAudioVideoInfo {
+extension retro_system_av_info: iRetroAudioVideoInfoProtocol {
     public typealias iRetroGeometryType = retro_game_geometry
     public typealias iRetroTimingType = retro_system_timing
     
@@ -51,11 +51,7 @@ extension retro_game_info: iRetroGameInfoProtocol {
     public var audioVideoInfo: retro_system_av_info = retro_system_av_info(geometry: retro_game_geometry(base_width: 160, base_height: 144, max_width: 160, max_height: 144, aspect_ratio: 1.1111112), timing: retro_system_timing(fps: 59.72750056960583, sample_rate: 32768.0))
     public var pitch = 2048
         
-    public var mainBuffer = [UInt8]()
-    public var currentFrame : CGImage? = nil
-    public var buttonsPressed : [Int16] = []
-    public var currentAudioFrame = [Int16]()
-    public var currentAudioFrameData = Data()
+
 
         
     private init() {
@@ -140,12 +136,6 @@ extension iRetroGBC {
     public func retroSetInputState(inputStateCallback: @convention(c) (UInt32, UInt32, UInt32, UInt32) -> Int16) {
         retro_set_input_state(inputStateCallback)
     }
-    
-    public func test() {
-        print("Hell")
-    }
-        
-
     
 }
 
