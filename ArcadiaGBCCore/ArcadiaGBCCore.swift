@@ -108,6 +108,10 @@ extension ArcadiaGBC {
         retro_load_game(&gameInfo)
     }
     
+    public func retroReset() {
+        retro_reset()
+    }
+    
     public func retroUnloadGame() {
         retro_unload_game()
     }
