@@ -12,6 +12,86 @@
 		954561932BE002B100113B8A /* iRetroGBCCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954561922BE002B100113B8A /* iRetroGBCCoreTests.swift */; };
 		954561942BE002B100113B8A /* ArcadiaGBCCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 954561862BE002B100113B8A /* ArcadiaGBCCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95456C3F2BE2B51D00113B8A /* ArcadiaGBCCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95456C3E2BE2B51D00113B8A /* ArcadiaGBCCore.swift */; };
+		955CC0D42BF78BE200C930ED /* LibretroGearboy.docc in Sources */ = {isa = PBXBuildFile; fileRef = 955CC0D32BF78BE200C930ED /* LibretroGearboy.docc */; };
+		955CC0DA2BF78BE300C930ED /* LibretroGearboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */; };
+		955CC0DF2BF78BE300C930ED /* LibretroGearboyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CC0DE2BF78BE300C930ED /* LibretroGearboyTests.swift */; };
+		955CC0E02BF78BE300C930ED /* LibretroGearboy.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC0D22BF78BE200C930ED /* LibretroGearboy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		955CC2402BF78C4000C930ED /* gearboy.yml in Resources */ = {isa = PBXBuildFile; fileRef = 955CC0E72BF78C4000C930ED /* gearboy.yml */; };
+		955CC2412BF78C4000C930ED /* FUNDING.yml in Resources */ = {isa = PBXBuildFile; fileRef = 955CC0E92BF78C4000C930ED /* FUNDING.yml */; };
+		955CC26D2BF78C4000C930ED /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = 955CC11E2BF78C4000C930ED /* Android.mk */; };
+		955CC26E2BF78C4000C930ED /* Application.mk in Resources */ = {isa = PBXBuildFile; fileRef = 955CC11F2BF78C4000C930ED /* Application.mk */; };
+		955CC26F2BF78C4000C930ED /* gearboy_libretro.info in Resources */ = {isa = PBXBuildFile; fileRef = 955CC1212BF78C4000C930ED /* gearboy_libretro.info */; };
+		955CC2702BF78C4000C930ED /* libretro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC1222BF78C4000C930ED /* libretro.cpp */; };
+		955CC2712BF78C4000C930ED /* libretro.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC1232BF78C4000C930ED /* libretro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		955CC2722BF78C4000C930ED /* link.T in Resources */ = {isa = PBXBuildFile; fileRef = 955CC1242BF78C4000C930ED /* link.T */; };
+		955CC2732BF78C4000C930ED /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 955CC1252BF78C4000C930ED /* Makefile */; };
+		955CC2742BF78C4000C930ED /* Makefile.common in Resources */ = {isa = PBXBuildFile; fileRef = 955CC1262BF78C4000C930ED /* Makefile.common */; };
+		955CC32D2BF78C4100C930ED /* gamecontrollerdb.txt in Resources */ = {isa = PBXBuildFile; fileRef = 955CC1FA2BF78C4000C930ED /* gamecontrollerdb.txt */; };
+		955CC32E2BF78C4100C930ED /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 955CC1FB2BF78C4000C930ED /* README.txt */; };
+		955CC32F2BF78C4100C930ED /* blargg_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC1FD2BF78C4000C930ED /* blargg_common.h */; };
+		955CC3302BF78C4100C930ED /* blargg_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC1FE2BF78C4000C930ED /* blargg_config.h */; };
+		955CC3312BF78C4100C930ED /* blargg_source.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC1FF2BF78C4000C930ED /* blargg_source.h */; };
+		955CC3322BF78C4100C930ED /* Blip_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2002BF78C4000C930ED /* Blip_Buffer.cpp */; };
+		955CC3332BF78C4100C930ED /* Blip_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2012BF78C4000C930ED /* Blip_Buffer.h */; };
+		955CC3342BF78C4100C930ED /* Blip_Synth.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2022BF78C4000C930ED /* Blip_Synth.h */; };
+		955CC3352BF78C4100C930ED /* Effects_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2032BF78C4000C930ED /* Effects_Buffer.cpp */; };
+		955CC3362BF78C4100C930ED /* Effects_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2042BF78C4000C930ED /* Effects_Buffer.h */; };
+		955CC3372BF78C4100C930ED /* Gb_Apu_State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2052BF78C4000C930ED /* Gb_Apu_State.cpp */; };
+		955CC3382BF78C4100C930ED /* Gb_Apu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2062BF78C4000C930ED /* Gb_Apu.cpp */; };
+		955CC3392BF78C4100C930ED /* Gb_Apu.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2072BF78C4000C930ED /* Gb_Apu.h */; };
+		955CC33A2BF78C4100C930ED /* Gb_Oscs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2082BF78C4000C930ED /* Gb_Oscs.cpp */; };
+		955CC33B2BF78C4100C930ED /* Gb_Oscs.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2092BF78C4000C930ED /* Gb_Oscs.h */; };
+		955CC33C2BF78C4100C930ED /* Multi_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC20A2BF78C4000C930ED /* Multi_Buffer.cpp */; };
+		955CC33D2BF78C4100C930ED /* Multi_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC20B2BF78C4000C930ED /* Multi_Buffer.h */; };
+		955CC33F2BF78C4100C930ED /* miniz.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC20E2BF78C4000C930ED /* miniz.h */; };
+		955CC3402BF78C4100C930ED /* Audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2102BF78C4000C930ED /* Audio.cpp */; };
+		955CC3412BF78C4100C930ED /* Audio.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2112BF78C4000C930ED /* Audio.h */; };
+		955CC3422BF78C4100C930ED /* Cartridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2122BF78C4000C930ED /* Cartridge.cpp */; };
+		955CC3432BF78C4100C930ED /* Cartridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2132BF78C4000C930ED /* Cartridge.h */; };
+		955CC3442BF78C4100C930ED /* CommonMemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2142BF78C4000C930ED /* CommonMemoryRule.cpp */; };
+		955CC3452BF78C4100C930ED /* CommonMemoryRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2152BF78C4000C930ED /* CommonMemoryRule.h */; };
+		955CC3462BF78C4100C930ED /* definitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2162BF78C4000C930ED /* definitions.h */; };
+		955CC3472BF78C4100C930ED /* gearboy.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2172BF78C4000C930ED /* gearboy.h */; };
+		955CC3482BF78C4100C930ED /* GearboyCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2182BF78C4000C930ED /* GearboyCore.cpp */; };
+		955CC3492BF78C4100C930ED /* GearboyCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2192BF78C4000C930ED /* GearboyCore.h */; };
+		955CC34A2BF78C4100C930ED /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC21A2BF78C4000C930ED /* Input.cpp */; };
+		955CC34B2BF78C4100C930ED /* Input.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC21B2BF78C4000C930ED /* Input.h */; };
+		955CC34C2BF78C4100C930ED /* IORegistersMemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC21C2BF78C4000C930ED /* IORegistersMemoryRule.cpp */; };
+		955CC34D2BF78C4100C930ED /* IORegistersMemoryRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC21D2BF78C4000C930ED /* IORegistersMemoryRule.h */; };
+		955CC34E2BF78C4100C930ED /* MBC1MemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC21E2BF78C4000C930ED /* MBC1MemoryRule.cpp */; };
+		955CC34F2BF78C4100C930ED /* MBC1MemoryRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC21F2BF78C4000C930ED /* MBC1MemoryRule.h */; };
+		955CC3502BF78C4100C930ED /* MBC2MemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2202BF78C4000C930ED /* MBC2MemoryRule.cpp */; };
+		955CC3512BF78C4100C930ED /* MBC2MemoryRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2212BF78C4000C930ED /* MBC2MemoryRule.h */; };
+		955CC3522BF78C4100C930ED /* MBC3MemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2222BF78C4000C930ED /* MBC3MemoryRule.cpp */; };
+		955CC3532BF78C4100C930ED /* MBC3MemoryRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2232BF78C4000C930ED /* MBC3MemoryRule.h */; };
+		955CC3542BF78C4100C930ED /* MBC5MemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2242BF78C4000C930ED /* MBC5MemoryRule.cpp */; };
+		955CC3552BF78C4100C930ED /* MBC5MemoryRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2252BF78C4000C930ED /* MBC5MemoryRule.h */; };
+		955CC3562BF78C4100C930ED /* Memory_inline.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2262BF78C4000C930ED /* Memory_inline.h */; };
+		955CC3572BF78C4100C930ED /* Memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2272BF78C4000C930ED /* Memory.cpp */; };
+		955CC3582BF78C4100C930ED /* Memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2282BF78C4000C930ED /* Memory.h */; };
+		955CC3592BF78C4100C930ED /* MemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2292BF78C4000C930ED /* MemoryRule.cpp */; };
+		955CC35A2BF78C4100C930ED /* MemoryRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC22A2BF78C4000C930ED /* MemoryRule.h */; };
+		955CC35B2BF78C4100C930ED /* MultiMBC1MemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC22B2BF78C4000C930ED /* MultiMBC1MemoryRule.cpp */; };
+		955CC35C2BF78C4100C930ED /* MultiMBC1MemoryRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC22C2BF78C4000C930ED /* MultiMBC1MemoryRule.h */; };
+		955CC35D2BF78C4100C930ED /* opcode_names.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC22D2BF78C4000C930ED /* opcode_names.h */; };
+		955CC35E2BF78C4100C930ED /* opcode_timing.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC22E2BF78C4000C930ED /* opcode_timing.h */; };
+		955CC35F2BF78C4100C930ED /* opcodes_cb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC22F2BF78C4000C930ED /* opcodes_cb.cpp */; };
+		955CC3602BF78C4100C930ED /* opcodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2302BF78C4000C930ED /* opcodes.cpp */; };
+		955CC3612BF78C4100C930ED /* Processor_inline.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2312BF78C4000C930ED /* Processor_inline.h */; };
+		955CC3622BF78C4100C930ED /* Processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2322BF78C4000C930ED /* Processor.cpp */; };
+		955CC3632BF78C4100C930ED /* Processor.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2332BF78C4000C930ED /* Processor.h */; };
+		955CC3642BF78C4100C930ED /* RomOnlyMemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2342BF78C4000C930ED /* RomOnlyMemoryRule.cpp */; };
+		955CC3652BF78C4100C930ED /* RomOnlyMemoryRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2352BF78C4000C930ED /* RomOnlyMemoryRule.h */; };
+		955CC3662BF78C4100C930ED /* SixteenBitRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2362BF78C4000C930ED /* SixteenBitRegister.h */; };
+		955CC3672BF78C4100C930ED /* Video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2372BF78C4000C930ED /* Video.cpp */; };
+		955CC3682BF78C4100C930ED /* Video.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2382BF78C4000C930ED /* Video.h */; };
+		955CC3692BF78C4100C930ED /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 955CC23A2BF78C4000C930ED /* .gitignore */; };
+		955CC36A2BF78C4100C930ED /* .gitlab-ci.yml in Resources */ = {isa = PBXBuildFile; fileRef = 955CC23B2BF78C4000C930ED /* .gitlab-ci.yml */; };
+		955CC36B2BF78C4100C930ED /* backers.md in Resources */ = {isa = PBXBuildFile; fileRef = 955CC23C2BF78C4000C930ED /* backers.md */; };
+		955CC36C2BF78C4100C930ED /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 955CC23D2BF78C4000C930ED /* LICENSE */; };
+		955CC36D2BF78C4100C930ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 955CC23E2BF78C4000C930ED /* README.md */; };
+		955CC36E2BF78CB900C930ED /* LibretroGearboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */; };
+		955CC36F2BF78CB900C930ED /* LibretroGearboy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		956F82922BE4DD5C0025FC5F /* GBCCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 956F82912BE4DD5C0025FC5F /* GBCCore.docc */; };
 		956F82982BE4DD5C0025FC5F /* GBCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956F828E2BE4DD5C0025FC5F /* GBCCore.framework */; };
 		956F829D2BE4DD5C0025FC5F /* GBCCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F829C2BE4DD5C0025FC5F /* GBCCoreTests.swift */; };
@@ -159,8 +239,6 @@
 		956F83E32BE4DDE80025FC5F /* Makefile.common in Resources */ = {isa = PBXBuildFile; fileRef = 956F83512BE4DDE70025FC5F /* Makefile.common */; };
 		956F83E42BE4DDE80025FC5F /* Makefile.libretro in Resources */ = {isa = PBXBuildFile; fileRef = 956F83522BE4DDE70025FC5F /* Makefile.libretro */; };
 		956F83E52BE4DDE80025FC5F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 956F83532BE4DDE70025FC5F /* README.md */; };
-		956F83E82BE4E2790025FC5F /* GBCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956F828E2BE4DD5C0025FC5F /* GBCCore.framework */; };
-		956F83E92BE4E2790025FC5F /* GBCCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 956F828E2BE4DD5C0025FC5F /* GBCCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		956F83ED2BE4E2FC0025FC5F /* GBCCoreHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 956F83EC2BE4E2D60025FC5F /* GBCCoreHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		956F83EF2BE4E5A60025FC5F /* GBCCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 956F83EE2BE4E5A60025FC5F /* GBCCore.h */; };
 		956F842B2BF48EE40025FC5F /* ArcadiaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */; };
@@ -175,14 +253,21 @@
 			remoteGlobalIDString = 954561822BE002B100113B8A;
 			remoteInfo = iRetroGBCCore;
 		};
-		956F82992BE4DD5C0025FC5F /* PBXContainerItemProxy */ = {
+		955CC0DB2BF78BE300C930ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9545617A2BE002B100113B8A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 956F828D2BE4DD5C0025FC5F;
-			remoteInfo = GBCCore_frame;
+			remoteGlobalIDString = 955CC0CF2BF78BE200C930ED;
+			remoteInfo = LibretroGearboy;
 		};
-		956F83EA2BE4E2790025FC5F /* PBXContainerItemProxy */ = {
+		955CC3702BF78CB900C930ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9545617A2BE002B100113B8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 955CC0CF2BF78BE200C930ED;
+			remoteInfo = LibretroGearboy;
+		};
+		956F82992BE4DD5C0025FC5F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9545617A2BE002B100113B8A /* Project object */;
 			proxyType = 1;
@@ -199,7 +284,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				956F842C2BF48EE40025FC5F /* ArcadiaCore.framework in Embed Frameworks */,
-				956F83E92BE4E2790025FC5F /* GBCCore.framework in Embed Frameworks */,
+				955CC36F2BF78CB900C930ED /* LibretroGearboy.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +299,86 @@
 		954561922BE002B100113B8A /* iRetroGBCCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRetroGBCCoreTests.swift; sourceTree = "<group>"; };
 		95456BE32BE2ADED00113B8A /* iRetroCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iRetroCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95456C3E2BE2B51D00113B8A /* ArcadiaGBCCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadiaGBCCore.swift; sourceTree = "<group>"; };
+		955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibretroGearboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		955CC0D22BF78BE200C930ED /* LibretroGearboy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibretroGearboy.h; sourceTree = "<group>"; };
+		955CC0D32BF78BE200C930ED /* LibretroGearboy.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LibretroGearboy.docc; sourceTree = "<group>"; };
+		955CC0D92BF78BE300C930ED /* LibretroGearboyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibretroGearboyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		955CC0DE2BF78BE300C930ED /* LibretroGearboyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibretroGearboyTests.swift; sourceTree = "<group>"; };
+		955CC0E72BF78C4000C930ED /* gearboy.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = gearboy.yml; sourceTree = "<group>"; };
+		955CC0E92BF78C4000C930ED /* FUNDING.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = FUNDING.yml; sourceTree = "<group>"; };
+		955CC11E2BF78C4000C930ED /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
+		955CC11F2BF78C4000C930ED /* Application.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Application.mk; sourceTree = "<group>"; };
+		955CC1212BF78C4000C930ED /* gearboy_libretro.info */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gearboy_libretro.info; sourceTree = "<group>"; };
+		955CC1222BF78C4000C930ED /* libretro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = libretro.cpp; sourceTree = "<group>"; };
+		955CC1232BF78C4000C930ED /* libretro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libretro.h; sourceTree = "<group>"; };
+		955CC1242BF78C4000C930ED /* link.T */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.T; sourceTree = "<group>"; };
+		955CC1252BF78C4000C930ED /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		955CC1262BF78C4000C930ED /* Makefile.common */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.common; sourceTree = "<group>"; };
+		955CC1FA2BF78C4000C930ED /* gamecontrollerdb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gamecontrollerdb.txt; sourceTree = "<group>"; };
+		955CC1FB2BF78C4000C930ED /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		955CC1FD2BF78C4000C930ED /* blargg_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blargg_common.h; sourceTree = "<group>"; };
+		955CC1FE2BF78C4000C930ED /* blargg_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blargg_config.h; sourceTree = "<group>"; };
+		955CC1FF2BF78C4000C930ED /* blargg_source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blargg_source.h; sourceTree = "<group>"; };
+		955CC2002BF78C4000C930ED /* Blip_Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Blip_Buffer.cpp; sourceTree = "<group>"; };
+		955CC2012BF78C4000C930ED /* Blip_Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blip_Buffer.h; sourceTree = "<group>"; };
+		955CC2022BF78C4000C930ED /* Blip_Synth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blip_Synth.h; sourceTree = "<group>"; };
+		955CC2032BF78C4000C930ED /* Effects_Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Effects_Buffer.cpp; sourceTree = "<group>"; };
+		955CC2042BF78C4000C930ED /* Effects_Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Effects_Buffer.h; sourceTree = "<group>"; };
+		955CC2052BF78C4000C930ED /* Gb_Apu_State.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gb_Apu_State.cpp; sourceTree = "<group>"; };
+		955CC2062BF78C4000C930ED /* Gb_Apu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gb_Apu.cpp; sourceTree = "<group>"; };
+		955CC2072BF78C4000C930ED /* Gb_Apu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gb_Apu.h; sourceTree = "<group>"; };
+		955CC2082BF78C4000C930ED /* Gb_Oscs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gb_Oscs.cpp; sourceTree = "<group>"; };
+		955CC2092BF78C4000C930ED /* Gb_Oscs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gb_Oscs.h; sourceTree = "<group>"; };
+		955CC20A2BF78C4000C930ED /* Multi_Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Multi_Buffer.cpp; sourceTree = "<group>"; };
+		955CC20B2BF78C4000C930ED /* Multi_Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Multi_Buffer.h; sourceTree = "<group>"; };
+		955CC20D2BF78C4000C930ED /* miniz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = miniz.c; sourceTree = "<group>"; };
+		955CC20E2BF78C4000C930ED /* miniz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = miniz.h; sourceTree = "<group>"; };
+		955CC2102BF78C4000C930ED /* Audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Audio.cpp; sourceTree = "<group>"; };
+		955CC2112BF78C4000C930ED /* Audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
+		955CC2122BF78C4000C930ED /* Cartridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cartridge.cpp; sourceTree = "<group>"; };
+		955CC2132BF78C4000C930ED /* Cartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cartridge.h; sourceTree = "<group>"; };
+		955CC2142BF78C4000C930ED /* CommonMemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommonMemoryRule.cpp; sourceTree = "<group>"; };
+		955CC2152BF78C4000C930ED /* CommonMemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMemoryRule.h; sourceTree = "<group>"; };
+		955CC2162BF78C4000C930ED /* definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
+		955CC2172BF78C4000C930ED /* gearboy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gearboy.h; sourceTree = "<group>"; };
+		955CC2182BF78C4000C930ED /* GearboyCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GearboyCore.cpp; sourceTree = "<group>"; };
+		955CC2192BF78C4000C930ED /* GearboyCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GearboyCore.h; sourceTree = "<group>"; };
+		955CC21A2BF78C4000C930ED /* Input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Input.cpp; sourceTree = "<group>"; };
+		955CC21B2BF78C4000C930ED /* Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input.h; sourceTree = "<group>"; };
+		955CC21C2BF78C4000C930ED /* IORegistersMemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IORegistersMemoryRule.cpp; sourceTree = "<group>"; };
+		955CC21D2BF78C4000C930ED /* IORegistersMemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IORegistersMemoryRule.h; sourceTree = "<group>"; };
+		955CC21E2BF78C4000C930ED /* MBC1MemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBC1MemoryRule.cpp; sourceTree = "<group>"; };
+		955CC21F2BF78C4000C930ED /* MBC1MemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBC1MemoryRule.h; sourceTree = "<group>"; };
+		955CC2202BF78C4000C930ED /* MBC2MemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBC2MemoryRule.cpp; sourceTree = "<group>"; };
+		955CC2212BF78C4000C930ED /* MBC2MemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBC2MemoryRule.h; sourceTree = "<group>"; };
+		955CC2222BF78C4000C930ED /* MBC3MemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBC3MemoryRule.cpp; sourceTree = "<group>"; };
+		955CC2232BF78C4000C930ED /* MBC3MemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBC3MemoryRule.h; sourceTree = "<group>"; };
+		955CC2242BF78C4000C930ED /* MBC5MemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBC5MemoryRule.cpp; sourceTree = "<group>"; };
+		955CC2252BF78C4000C930ED /* MBC5MemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBC5MemoryRule.h; sourceTree = "<group>"; };
+		955CC2262BF78C4000C930ED /* Memory_inline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memory_inline.h; sourceTree = "<group>"; };
+		955CC2272BF78C4000C930ED /* Memory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Memory.cpp; sourceTree = "<group>"; };
+		955CC2282BF78C4000C930ED /* Memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
+		955CC2292BF78C4000C930ED /* MemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryRule.cpp; sourceTree = "<group>"; };
+		955CC22A2BF78C4000C930ED /* MemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryRule.h; sourceTree = "<group>"; };
+		955CC22B2BF78C4000C930ED /* MultiMBC1MemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiMBC1MemoryRule.cpp; sourceTree = "<group>"; };
+		955CC22C2BF78C4000C930ED /* MultiMBC1MemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiMBC1MemoryRule.h; sourceTree = "<group>"; };
+		955CC22D2BF78C4000C930ED /* opcode_names.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opcode_names.h; sourceTree = "<group>"; };
+		955CC22E2BF78C4000C930ED /* opcode_timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opcode_timing.h; sourceTree = "<group>"; };
+		955CC22F2BF78C4000C930ED /* opcodes_cb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = opcodes_cb.cpp; sourceTree = "<group>"; };
+		955CC2302BF78C4000C930ED /* opcodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = opcodes.cpp; sourceTree = "<group>"; };
+		955CC2312BF78C4000C930ED /* Processor_inline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor_inline.h; sourceTree = "<group>"; };
+		955CC2322BF78C4000C930ED /* Processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processor.cpp; sourceTree = "<group>"; };
+		955CC2332BF78C4000C930ED /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		955CC2342BF78C4000C930ED /* RomOnlyMemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RomOnlyMemoryRule.cpp; sourceTree = "<group>"; };
+		955CC2352BF78C4000C930ED /* RomOnlyMemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RomOnlyMemoryRule.h; sourceTree = "<group>"; };
+		955CC2362BF78C4000C930ED /* SixteenBitRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixteenBitRegister.h; sourceTree = "<group>"; };
+		955CC2372BF78C4000C930ED /* Video.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Video.cpp; sourceTree = "<group>"; };
+		955CC2382BF78C4000C930ED /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		955CC23A2BF78C4000C930ED /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		955CC23B2BF78C4000C930ED /* .gitlab-ci.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = ".gitlab-ci.yml"; sourceTree = "<group>"; };
+		955CC23C2BF78C4000C930ED /* backers.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = backers.md; sourceTree = "<group>"; };
+		955CC23D2BF78C4000C930ED /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		955CC23E2BF78C4000C930ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		956F828E2BE4DD5C0025FC5F /* GBCCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GBCCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		956F82902BE4DD5C0025FC5F /* GBCCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBCCore.h; sourceTree = "<group>"; };
 		956F82912BE4DD5C0025FC5F /* GBCCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = GBCCore.docc; sourceTree = "<group>"; };
@@ -376,7 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				956F842B2BF48EE40025FC5F /* ArcadiaCore.framework in Frameworks */,
-				956F83E82BE4E2790025FC5F /* GBCCore.framework in Frameworks */,
+				955CC36E2BF78CB900C930ED /* LibretroGearboy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +550,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				9545618E2BE002B100113B8A /* ArcadiaGBCCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955CC0CD2BF78BE200C930ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955CC0D62BF78BE300C930ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955CC0DA2BF78BE300C930ED /* LibretroGearboy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +593,8 @@
 				954561912BE002B100113B8A /* ArcadiaGBCCoreTests */,
 				956F828F2BE4DD5C0025FC5F /* GBCCore */,
 				956F829B2BE4DD5C0025FC5F /* GBCCoreTests */,
+				955CC0D12BF78BE200C930ED /* LibretroGearboy */,
+				955CC0DD2BF78BE300C930ED /* LibretroGearboyTests */,
 				954561842BE002B100113B8A /* Products */,
 				95456BE22BE2ADED00113B8A /* Frameworks */,
 			);
@@ -425,6 +607,8 @@
 				9545618D2BE002B100113B8A /* ArcadiaGBCCoreTests.xctest */,
 				956F828E2BE4DD5C0025FC5F /* GBCCore.framework */,
 				956F82972BE4DD5C0025FC5F /* GBCCoreTests.xctest */,
+				955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */,
+				955CC0D92BF78BE300C930ED /* LibretroGearboyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -455,6 +639,170 @@
 				95456BE32BE2ADED00113B8A /* iRetroCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		955CC0D12BF78BE200C930ED /* LibretroGearboy */ = {
+			isa = PBXGroup;
+			children = (
+				955CC23F2BF78C4000C930ED /* Gearboy */,
+				955CC0D22BF78BE200C930ED /* LibretroGearboy.h */,
+				955CC0D32BF78BE200C930ED /* LibretroGearboy.docc */,
+			);
+			path = LibretroGearboy;
+			sourceTree = "<group>";
+		};
+		955CC0DD2BF78BE300C930ED /* LibretroGearboyTests */ = {
+			isa = PBXGroup;
+			children = (
+				955CC0DE2BF78BE300C930ED /* LibretroGearboyTests.swift */,
+			);
+			path = LibretroGearboyTests;
+			sourceTree = "<group>";
+		};
+		955CC0E82BF78C4000C930ED /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				955CC0E72BF78C4000C930ED /* gearboy.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
+		955CC0EA2BF78C4000C930ED /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				955CC0E82BF78C4000C930ED /* workflows */,
+				955CC0E92BF78C4000C930ED /* FUNDING.yml */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		955CC1202BF78C4000C930ED /* jni */ = {
+			isa = PBXGroup;
+			children = (
+				955CC11E2BF78C4000C930ED /* Android.mk */,
+				955CC11F2BF78C4000C930ED /* Application.mk */,
+			);
+			path = jni;
+			sourceTree = "<group>";
+		};
+		955CC1272BF78C4000C930ED /* libretro */ = {
+			isa = PBXGroup;
+			children = (
+				955CC1202BF78C4000C930ED /* jni */,
+				955CC1212BF78C4000C930ED /* gearboy_libretro.info */,
+				955CC1222BF78C4000C930ED /* libretro.cpp */,
+				955CC1232BF78C4000C930ED /* libretro.h */,
+				955CC1242BF78C4000C930ED /* link.T */,
+				955CC1252BF78C4000C930ED /* Makefile */,
+				955CC1262BF78C4000C930ED /* Makefile.common */,
+			);
+			path = libretro;
+			sourceTree = "<group>";
+		};
+		955CC1FC2BF78C4000C930ED /* platforms */ = {
+			isa = PBXGroup;
+			children = (
+				955CC1272BF78C4000C930ED /* libretro */,
+				955CC1FA2BF78C4000C930ED /* gamecontrollerdb.txt */,
+				955CC1FB2BF78C4000C930ED /* README.txt */,
+			);
+			path = platforms;
+			sourceTree = "<group>";
+		};
+		955CC20C2BF78C4000C930ED /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				955CC1FD2BF78C4000C930ED /* blargg_common.h */,
+				955CC1FE2BF78C4000C930ED /* blargg_config.h */,
+				955CC1FF2BF78C4000C930ED /* blargg_source.h */,
+				955CC2002BF78C4000C930ED /* Blip_Buffer.cpp */,
+				955CC2012BF78C4000C930ED /* Blip_Buffer.h */,
+				955CC2022BF78C4000C930ED /* Blip_Synth.h */,
+				955CC2032BF78C4000C930ED /* Effects_Buffer.cpp */,
+				955CC2042BF78C4000C930ED /* Effects_Buffer.h */,
+				955CC2052BF78C4000C930ED /* Gb_Apu_State.cpp */,
+				955CC2062BF78C4000C930ED /* Gb_Apu.cpp */,
+				955CC2072BF78C4000C930ED /* Gb_Apu.h */,
+				955CC2082BF78C4000C930ED /* Gb_Oscs.cpp */,
+				955CC2092BF78C4000C930ED /* Gb_Oscs.h */,
+				955CC20A2BF78C4000C930ED /* Multi_Buffer.cpp */,
+				955CC20B2BF78C4000C930ED /* Multi_Buffer.h */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+		955CC20F2BF78C4000C930ED /* miniz */ = {
+			isa = PBXGroup;
+			children = (
+				955CC20D2BF78C4000C930ED /* miniz.c */,
+				955CC20E2BF78C4000C930ED /* miniz.h */,
+			);
+			path = miniz;
+			sourceTree = "<group>";
+		};
+		955CC2392BF78C4000C930ED /* src */ = {
+			isa = PBXGroup;
+			children = (
+				955CC20C2BF78C4000C930ED /* audio */,
+				955CC20F2BF78C4000C930ED /* miniz */,
+				955CC2102BF78C4000C930ED /* Audio.cpp */,
+				955CC2112BF78C4000C930ED /* Audio.h */,
+				955CC2122BF78C4000C930ED /* Cartridge.cpp */,
+				955CC2132BF78C4000C930ED /* Cartridge.h */,
+				955CC2142BF78C4000C930ED /* CommonMemoryRule.cpp */,
+				955CC2152BF78C4000C930ED /* CommonMemoryRule.h */,
+				955CC2162BF78C4000C930ED /* definitions.h */,
+				955CC2172BF78C4000C930ED /* gearboy.h */,
+				955CC2182BF78C4000C930ED /* GearboyCore.cpp */,
+				955CC2192BF78C4000C930ED /* GearboyCore.h */,
+				955CC21A2BF78C4000C930ED /* Input.cpp */,
+				955CC21B2BF78C4000C930ED /* Input.h */,
+				955CC21C2BF78C4000C930ED /* IORegistersMemoryRule.cpp */,
+				955CC21D2BF78C4000C930ED /* IORegistersMemoryRule.h */,
+				955CC21E2BF78C4000C930ED /* MBC1MemoryRule.cpp */,
+				955CC21F2BF78C4000C930ED /* MBC1MemoryRule.h */,
+				955CC2202BF78C4000C930ED /* MBC2MemoryRule.cpp */,
+				955CC2212BF78C4000C930ED /* MBC2MemoryRule.h */,
+				955CC2222BF78C4000C930ED /* MBC3MemoryRule.cpp */,
+				955CC2232BF78C4000C930ED /* MBC3MemoryRule.h */,
+				955CC2242BF78C4000C930ED /* MBC5MemoryRule.cpp */,
+				955CC2252BF78C4000C930ED /* MBC5MemoryRule.h */,
+				955CC2262BF78C4000C930ED /* Memory_inline.h */,
+				955CC2272BF78C4000C930ED /* Memory.cpp */,
+				955CC2282BF78C4000C930ED /* Memory.h */,
+				955CC2292BF78C4000C930ED /* MemoryRule.cpp */,
+				955CC22A2BF78C4000C930ED /* MemoryRule.h */,
+				955CC22B2BF78C4000C930ED /* MultiMBC1MemoryRule.cpp */,
+				955CC22C2BF78C4000C930ED /* MultiMBC1MemoryRule.h */,
+				955CC22D2BF78C4000C930ED /* opcode_names.h */,
+				955CC22E2BF78C4000C930ED /* opcode_timing.h */,
+				955CC22F2BF78C4000C930ED /* opcodes_cb.cpp */,
+				955CC2302BF78C4000C930ED /* opcodes.cpp */,
+				955CC2312BF78C4000C930ED /* Processor_inline.h */,
+				955CC2322BF78C4000C930ED /* Processor.cpp */,
+				955CC2332BF78C4000C930ED /* Processor.h */,
+				955CC2342BF78C4000C930ED /* RomOnlyMemoryRule.cpp */,
+				955CC2352BF78C4000C930ED /* RomOnlyMemoryRule.h */,
+				955CC2362BF78C4000C930ED /* SixteenBitRegister.h */,
+				955CC2372BF78C4000C930ED /* Video.cpp */,
+				955CC2382BF78C4000C930ED /* Video.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		955CC23F2BF78C4000C930ED /* Gearboy */ = {
+			isa = PBXGroup;
+			children = (
+				955CC0EA2BF78C4000C930ED /* .github */,
+				955CC1FC2BF78C4000C930ED /* platforms */,
+				955CC2392BF78C4000C930ED /* src */,
+				955CC23A2BF78C4000C930ED /* .gitignore */,
+				955CC23B2BF78C4000C930ED /* .gitlab-ci.yml */,
+				955CC23C2BF78C4000C930ED /* backers.md */,
+				955CC23D2BF78C4000C930ED /* LICENSE */,
+				955CC23E2BF78C4000C930ED /* README.md */,
+			);
+			path = Gearboy;
 			sourceTree = "<group>";
 		};
 		956F828F2BE4DD5C0025FC5F /* GBCCore */ = {
@@ -880,6 +1228,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		955CC0CB2BF78BE200C930ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955CC34B2BF78C4100C930ED /* Input.h in Headers */,
+				955CC3332BF78C4100C930ED /* Blip_Buffer.h in Headers */,
+				955CC32F2BF78C4100C930ED /* blargg_common.h in Headers */,
+				955CC3432BF78C4100C930ED /* Cartridge.h in Headers */,
+				955CC3552BF78C4100C930ED /* MBC5MemoryRule.h in Headers */,
+				955CC3492BF78C4100C930ED /* GearboyCore.h in Headers */,
+				955CC33D2BF78C4100C930ED /* Multi_Buffer.h in Headers */,
+				955CC3462BF78C4100C930ED /* definitions.h in Headers */,
+				955CC3512BF78C4100C930ED /* MBC2MemoryRule.h in Headers */,
+				955CC3342BF78C4100C930ED /* Blip_Synth.h in Headers */,
+				955CC33B2BF78C4100C930ED /* Gb_Oscs.h in Headers */,
+				955CC3472BF78C4100C930ED /* gearboy.h in Headers */,
+				955CC3532BF78C4100C930ED /* MBC3MemoryRule.h in Headers */,
+				955CC35E2BF78C4100C930ED /* opcode_timing.h in Headers */,
+				955CC35A2BF78C4100C930ED /* MemoryRule.h in Headers */,
+				955CC3662BF78C4100C930ED /* SixteenBitRegister.h in Headers */,
+				955CC34F2BF78C4100C930ED /* MBC1MemoryRule.h in Headers */,
+				955CC3682BF78C4100C930ED /* Video.h in Headers */,
+				955CC3612BF78C4100C930ED /* Processor_inline.h in Headers */,
+				955CC3632BF78C4100C930ED /* Processor.h in Headers */,
+				955CC3652BF78C4100C930ED /* RomOnlyMemoryRule.h in Headers */,
+				955CC3302BF78C4100C930ED /* blargg_config.h in Headers */,
+				955CC3362BF78C4100C930ED /* Effects_Buffer.h in Headers */,
+				955CC3312BF78C4100C930ED /* blargg_source.h in Headers */,
+				955CC3582BF78C4100C930ED /* Memory.h in Headers */,
+				955CC2712BF78C4000C930ED /* libretro.h in Headers */,
+				955CC3392BF78C4100C930ED /* Gb_Apu.h in Headers */,
+				955CC3412BF78C4100C930ED /* Audio.h in Headers */,
+				955CC33F2BF78C4100C930ED /* miniz.h in Headers */,
+				955CC35D2BF78C4100C930ED /* opcode_names.h in Headers */,
+				955CC3562BF78C4100C930ED /* Memory_inline.h in Headers */,
+				955CC0E02BF78BE300C930ED /* LibretroGearboy.h in Headers */,
+				955CC3452BF78C4100C930ED /* CommonMemoryRule.h in Headers */,
+				955CC35C2BF78C4100C930ED /* MultiMBC1MemoryRule.h in Headers */,
+				955CC34D2BF78C4100C930ED /* IORegistersMemoryRule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		956F82892BE4DD5C0025FC5F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -976,7 +1366,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				956F83EB2BE4E2790025FC5F /* PBXTargetDependency */,
+				955CC3712BF78CB900C930ED /* PBXTargetDependency */,
 			);
 			name = ArcadiaGBCCore;
 			productName = iRetroGBCCore;
@@ -999,6 +1389,42 @@
 			name = ArcadiaGBCCoreTests;
 			productName = iRetroGBCCoreTests;
 			productReference = 9545618D2BE002B100113B8A /* ArcadiaGBCCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		955CC0CF2BF78BE200C930ED /* LibretroGearboy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 955CC0E52BF78BE300C930ED /* Build configuration list for PBXNativeTarget "LibretroGearboy" */;
+			buildPhases = (
+				955CC0CB2BF78BE200C930ED /* Headers */,
+				955CC0CC2BF78BE200C930ED /* Sources */,
+				955CC0CD2BF78BE200C930ED /* Frameworks */,
+				955CC0CE2BF78BE200C930ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibretroGearboy;
+			productName = LibretroGearboy;
+			productReference = 955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		955CC0D82BF78BE300C930ED /* LibretroGearboyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 955CC0E62BF78BE300C930ED /* Build configuration list for PBXNativeTarget "LibretroGearboyTests" */;
+			buildPhases = (
+				955CC0D52BF78BE300C930ED /* Sources */,
+				955CC0D62BF78BE300C930ED /* Frameworks */,
+				955CC0D72BF78BE300C930ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				955CC0DC2BF78BE300C930ED /* PBXTargetDependency */,
+			);
+			name = LibretroGearboyTests;
+			productName = LibretroGearboyTests;
+			productReference = 955CC0D92BF78BE300C930ED /* LibretroGearboyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		956F828D2BE4DD5C0025FC5F /* GBCCore */ = {
@@ -1053,6 +1479,12 @@
 					9545618C2BE002B100113B8A = {
 						CreatedOnToolsVersion = 15.3;
 					};
+					955CC0CF2BF78BE200C930ED = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					955CC0D82BF78BE300C930ED = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					956F828D2BE4DD5C0025FC5F = {
 						CreatedOnToolsVersion = 15.3;
 						LastSwiftMigration = 1530;
@@ -1079,6 +1511,8 @@
 				9545618C2BE002B100113B8A /* ArcadiaGBCCoreTests */,
 				956F828D2BE4DD5C0025FC5F /* GBCCore */,
 				956F82962BE4DD5C0025FC5F /* GBCCoreTests */,
+				955CC0CF2BF78BE200C930ED /* LibretroGearboy */,
+				955CC0D82BF78BE300C930ED /* LibretroGearboyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1092,6 +1526,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9545618B2BE002B100113B8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955CC0CE2BF78BE200C930ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955CC26F2BF78C4000C930ED /* gearboy_libretro.info in Resources */,
+				955CC26D2BF78C4000C930ED /* Android.mk in Resources */,
+				955CC2412BF78C4000C930ED /* FUNDING.yml in Resources */,
+				955CC2742BF78C4000C930ED /* Makefile.common in Resources */,
+				955CC32D2BF78C4100C930ED /* gamecontrollerdb.txt in Resources */,
+				955CC36A2BF78C4100C930ED /* .gitlab-ci.yml in Resources */,
+				955CC32E2BF78C4100C930ED /* README.txt in Resources */,
+				955CC36C2BF78C4100C930ED /* LICENSE in Resources */,
+				955CC36D2BF78C4100C930ED /* README.md in Resources */,
+				955CC3692BF78C4100C930ED /* .gitignore in Resources */,
+				955CC26E2BF78C4000C930ED /* Application.mk in Resources */,
+				955CC2722BF78C4000C930ED /* link.T in Resources */,
+				955CC2402BF78C4000C930ED /* gearboy.yml in Resources */,
+				955CC36B2BF78C4100C930ED /* backers.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955CC0D72BF78BE300C930ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1156,6 +1618,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				954561932BE002B100113B8A /* iRetroGBCCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955CC0CC2BF78BE200C930ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955CC3522BF78C4100C930ED /* MBC3MemoryRule.cpp in Sources */,
+				955CC3442BF78C4100C930ED /* CommonMemoryRule.cpp in Sources */,
+				955CC34E2BF78C4100C930ED /* MBC1MemoryRule.cpp in Sources */,
+				955CC3622BF78C4100C930ED /* Processor.cpp in Sources */,
+				955CC3642BF78C4100C930ED /* RomOnlyMemoryRule.cpp in Sources */,
+				955CC3422BF78C4100C930ED /* Cartridge.cpp in Sources */,
+				955CC34A2BF78C4100C930ED /* Input.cpp in Sources */,
+				955CC33A2BF78C4100C930ED /* Gb_Oscs.cpp in Sources */,
+				955CC3672BF78C4100C930ED /* Video.cpp in Sources */,
+				955CC3372BF78C4100C930ED /* Gb_Apu_State.cpp in Sources */,
+				955CC3502BF78C4100C930ED /* MBC2MemoryRule.cpp in Sources */,
+				955CC3592BF78C4100C930ED /* MemoryRule.cpp in Sources */,
+				955CC0D42BF78BE200C930ED /* LibretroGearboy.docc in Sources */,
+				955CC3402BF78C4100C930ED /* Audio.cpp in Sources */,
+				955CC2702BF78C4000C930ED /* libretro.cpp in Sources */,
+				955CC34C2BF78C4100C930ED /* IORegistersMemoryRule.cpp in Sources */,
+				955CC2732BF78C4000C930ED /* Makefile in Sources */,
+				955CC35B2BF78C4100C930ED /* MultiMBC1MemoryRule.cpp in Sources */,
+				955CC33C2BF78C4100C930ED /* Multi_Buffer.cpp in Sources */,
+				955CC3322BF78C4100C930ED /* Blip_Buffer.cpp in Sources */,
+				955CC3572BF78C4100C930ED /* Memory.cpp in Sources */,
+				955CC3352BF78C4100C930ED /* Effects_Buffer.cpp in Sources */,
+				955CC3382BF78C4100C930ED /* Gb_Apu.cpp in Sources */,
+				955CC3482BF78C4100C930ED /* GearboyCore.cpp in Sources */,
+				955CC35F2BF78C4100C930ED /* opcodes_cb.cpp in Sources */,
+				955CC3542BF78C4100C930ED /* MBC5MemoryRule.cpp in Sources */,
+				955CC3602BF78C4100C930ED /* opcodes.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955CC0D52BF78BE300C930ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955CC0DF2BF78BE300C930ED /* LibretroGearboyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1229,15 +1733,20 @@
 			target = 954561822BE002B100113B8A /* ArcadiaGBCCore */;
 			targetProxy = 9545618F2BE002B100113B8A /* PBXContainerItemProxy */;
 		};
+		955CC0DC2BF78BE300C930ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 955CC0CF2BF78BE200C930ED /* LibretroGearboy */;
+			targetProxy = 955CC0DB2BF78BE300C930ED /* PBXContainerItemProxy */;
+		};
+		955CC3712BF78CB900C930ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 955CC0CF2BF78BE200C930ED /* LibretroGearboy */;
+			targetProxy = 955CC3702BF78CB900C930ED /* PBXContainerItemProxy */;
+		};
 		956F829A2BE4DD5C0025FC5F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 956F828D2BE4DD5C0025FC5F /* GBCCore */;
 			targetProxy = 956F82992BE4DD5C0025FC5F /* PBXContainerItemProxy */;
-		};
-		956F83EB2BE4E2790025FC5F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 956F828D2BE4DD5C0025FC5F /* GBCCore */;
-			targetProxy = 956F83EA2BE4E2790025FC5F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1500,6 +2009,148 @@
 			};
 			name = Release;
 		};
+		955CC0E12BF78BE300C930ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 32DR4Q2NF7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LibretroGearboy/Gearboy/platforms/windows/dependencies/glew-2.2.0/lib/Release/arm64",
+					"$(PROJECT_DIR)/LibretroGearboy/Gearboy/platforms/windows/dependencies/glew-2.2.0/lib/Release/Win32",
+					"$(PROJECT_DIR)/LibretroGearboy/Gearboy/platforms/windows/dependencies/glew-2.2.0/lib/Release/x64",
+					"$(PROJECT_DIR)/LibretroGearboy/Gearboy/platforms/windows/dependencies/SDL2-2.28.5/lib/arm64",
+					"$(PROJECT_DIR)/LibretroGearboy/Gearboy/platforms/windows/dependencies/SDL2-2.28.5/lib/x64",
+					"$(PROJECT_DIR)/LibretroGearboy/Gearboy/platforms/windows/dependencies/SDL2-2.28.5/lib/x86",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davideandreoli.LibretroGearboy;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		955CC0E22BF78BE300C930ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 32DR4Q2NF7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LibretroGearboy/Gearboy/platforms/windows/dependencies/glew-2.2.0/lib/Release/arm64",
+					"$(PROJECT_DIR)/LibretroGearboy/Gearboy/platforms/windows/dependencies/glew-2.2.0/lib/Release/Win32",
+					"$(PROJECT_DIR)/LibretroGearboy/Gearboy/platforms/windows/dependencies/glew-2.2.0/lib/Release/x64",
+					"$(PROJECT_DIR)/LibretroGearboy/Gearboy/platforms/windows/dependencies/SDL2-2.28.5/lib/arm64",
+					"$(PROJECT_DIR)/LibretroGearboy/Gearboy/platforms/windows/dependencies/SDL2-2.28.5/lib/x64",
+					"$(PROJECT_DIR)/LibretroGearboy/Gearboy/platforms/windows/dependencies/SDL2-2.28.5/lib/x86",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davideandreoli.LibretroGearboy;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		955CC0E32BF78BE300C930ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32DR4Q2NF7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davideandreoli.LibretroGearboyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		955CC0E42BF78BE300C930ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 32DR4Q2NF7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davideandreoli.LibretroGearboyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		956F829F2BE4DD5C0025FC5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1691,6 +2342,24 @@
 			buildConfigurations = (
 				9545619B2BE002B100113B8A /* Debug */,
 				9545619C2BE002B100113B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		955CC0E52BF78BE300C930ED /* Build configuration list for PBXNativeTarget "LibretroGearboy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				955CC0E12BF78BE300C930ED /* Debug */,
+				955CC0E22BF78BE300C930ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		955CC0E62BF78BE300C930ED /* Build configuration list for PBXNativeTarget "LibretroGearboyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				955CC0E32BF78BE300C930ED /* Debug */,
+				955CC0E42BF78BE300C930ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

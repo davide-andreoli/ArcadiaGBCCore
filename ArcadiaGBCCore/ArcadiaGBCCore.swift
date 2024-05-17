@@ -7,7 +7,7 @@
 
 import Foundation
 import ArcadiaCore
-import GBCCore
+import LibretroGearboy
 import SwiftUI
 import Observation
 import CoreGraphics

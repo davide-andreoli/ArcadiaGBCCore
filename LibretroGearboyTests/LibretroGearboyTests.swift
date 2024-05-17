@@ -1,14 +1,14 @@
 //
-//  LibretroTGBDualTests.swift
-//  LibretroTGBDualTests
+//  LibretroGearboyTests.swift
+//  LibretroGearboyTests
 //
 //  Created by Davide Andreoli on 17/05/24.
 //
 
 import XCTest
-@testable import LibretroTGBDual
+@testable import LibretroGearboy
 
-class LibretroTGBDualTests: XCTestCase {
+class LibretroGearboyTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
