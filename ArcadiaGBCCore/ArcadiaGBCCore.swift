@@ -77,6 +77,7 @@ extension retro_variable: ArcadiaVariableProtocol {
     @objc func gameLoop() {
         if !paused {
             retroRun()
+            saveMemoryData(memoryId: 0, saveFileURL: ArcadiaCoreEmulationState.sharedInstance.currentSaveFolder!)
         }
     }
      

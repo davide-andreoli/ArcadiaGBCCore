@@ -297,7 +297,6 @@
 		954561872BE002B100113B8A /* ArcadiaGBCCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ArcadiaGBCCore.docc; sourceTree = "<group>"; };
 		9545618D2BE002B100113B8A /* ArcadiaGBCCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcadiaGBCCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		954561922BE002B100113B8A /* iRetroGBCCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRetroGBCCoreTests.swift; sourceTree = "<group>"; };
-		95456BE32BE2ADED00113B8A /* iRetroCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iRetroCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95456C3E2BE2B51D00113B8A /* ArcadiaGBCCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadiaGBCCore.swift; sourceTree = "<group>"; };
 		955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibretroGearboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		955CC0D22BF78BE200C930ED /* LibretroGearboy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibretroGearboy.h; sourceTree = "<group>"; };
@@ -531,7 +530,6 @@
 		956F83532BE4DDE70025FC5F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		956F83EC2BE4E2D60025FC5F /* GBCCoreHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBCCoreHeaders.h; sourceTree = "<group>"; };
 		956F83EE2BE4E5A60025FC5F /* GBCCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBCCore.h; path = GBCCore/GBCCore.h; sourceTree = SOURCE_ROOT; };
-		956F83F02BE4E67B0025FC5F /* iRetroCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iRetroCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ArcadiaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -635,8 +633,6 @@
 			isa = PBXGroup;
 			children = (
 				956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */,
-				956F83F02BE4E67B0025FC5F /* iRetroCore.framework */,
-				95456BE32BE2ADED00113B8A /* iRetroCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
