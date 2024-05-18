@@ -48,19 +48,15 @@ extension retro_variable: ArcadiaVariableProtocol {
     public typealias ArcadiaSystemTimingType = retro_system_timing
     public typealias ArcadiaVariableType = retro_variable
     
-    public static var sharedInstance = ArcadiaGBC()
-    
+
     public var paused = false
     public var initialized = false
     public var mainGameLoop : Timer? = nil
     public var loadedGame: URL? = nil
-    public var audioVideoInfo: retro_system_av_info = retro_system_av_info(geometry: retro_game_geometry(base_width: 160, base_height: 144, max_width: 160, max_height: 144, aspect_ratio: 1.1111112), timing: retro_system_timing(fps: 59.72750056960583, sample_rate: 32768.0))
-    public var pitch = 2048
-        
+    public var audioVideoInfo: retro_system_av_info = retro_system_av_info(geometry: retro_game_geometry(base_width: 160, base_height: 144, max_width: 160, max_height: 144, aspect_ratio: 1.1111112), timing: retro_system_timing(fps: 59.72750056960583, sample_rate: 44100))
 
-
-        
-    private init() {
+    
+    public init() {
     }
     
     
@@ -72,7 +68,7 @@ extension retro_variable: ArcadiaVariableProtocol {
     }
     
     public func stopGameLoop() {
-        mainGameLoop!.invalidate()
+        mainGameLoop?.invalidate()
         mainGameLoop = nil
         paused = true
     }
@@ -126,6 +122,14 @@ extension ArcadiaGBC {
     
     public func retroUnserialize(data: UnsafeRawPointer!, size: Int) {
         retro_unserialize(data, size)
+    }
+    
+    public func retroGetMemoryData(memoryDataId: UInt32) -> UnsafeMutableRawPointer! {
+        return retro_get_memory_data(memoryDataId)
+    }
+    
+    public func retroGetMemorySize(memoryDataId: UInt32) -> Int {
+        return retro_get_memory_size(memoryDataId)
     }
     
     public func retroSetEnvironment(environmentCallback: @convention(c) (UInt32, UnsafeMutableRawPointer?) -> Bool) {
