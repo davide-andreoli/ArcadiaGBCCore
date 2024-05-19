@@ -39,7 +39,7 @@ extension retro_variable: ArcadiaVariableProtocol {
 }
 
 
-@Observable public class ArcadiaGBC: ArcadiaCoreProtocol {
+@Observable public class ArcadiaGBC: ArcadiaCoreProtocol {    
     
     public typealias ArcadiaCoreType = ArcadiaGBC
     public typealias ArcadiaAudioVideoInfoType = retro_system_av_info
@@ -54,33 +54,11 @@ extension retro_variable: ArcadiaVariableProtocol {
     public var mainGameLoop : Timer? = nil
     public var loadedGame: URL? = nil
     public var audioVideoInfo: retro_system_av_info = retro_system_av_info(geometry: retro_game_geometry(base_width: 160, base_height: 144, max_width: 160, max_height: 144, aspect_ratio: 1.1111112), timing: retro_system_timing(fps: 59.72750056960583, sample_rate: 44100))
-
+    public var initialSaveRamSnapshot: [UInt8]? = nil
     
     public init() {
     }
     
-    
-
-    public func startGameLoop() {
-        mainGameLoop = Timer.scheduledTimer(timeInterval: 1.0 / 60.0, target: self, selector: #selector(gameLoop), userInfo: nil, repeats: true)
-        RunLoop.current.add(mainGameLoop!, forMode: .default)
-        paused = false
-    }
-    
-    public func stopGameLoop() {
-        mainGameLoop?.invalidate()
-        mainGameLoop = nil
-        paused = true
-    }
-    
-    
-    @objc func gameLoop() {
-        if !paused {
-            retroRun()
-            saveMemoryData(memoryId: 0, saveFileURL: ArcadiaCoreEmulationState.sharedInstance.currentSaveFolder!)
-        }
-    }
-     
 }
 
 extension ArcadiaGBC {
