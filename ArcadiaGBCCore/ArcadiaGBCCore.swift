@@ -14,41 +14,10 @@ import CoreGraphics
 import CoreVideo
 import AVFoundation
 
-//TODO: There is an issue with GBC games, the core does not input the correct pixel values (they're very dark) and after loading them the core starts behaving in weird way (outputting very dark pixel values also for GB games)
-
-extension retro_game_geometry: ArcadiaGameGeometryProtocol {
-    
-}
-
-extension retro_system_timing: ArcadiaSystemTimingProtocol {
-    
-}
-
-extension retro_system_av_info: ArcadiaAudioVideoInfoProtocol {
-    public typealias ArcadiaGeometryType = retro_game_geometry
-    public typealias ArcadiaTimingType = retro_system_timing
-    
-}
-
-extension retro_game_info: ArcadiaGameInfoProtocol {
-    
-}
-
-extension retro_variable: ArcadiaVariableProtocol {
-    
-}
-
-
 @Observable public class ArcadiaGBC: ArcadiaCoreProtocol {    
     
     public typealias ArcadiaCoreType = ArcadiaGBC
-    public typealias ArcadiaAudioVideoInfoType = retro_system_av_info
-    public typealias ArcadiaGameInfo = retro_game_info
-    public typealias ArcadiaGameGeometryType = retro_game_geometry
-    public typealias ArcadiaSystemTimingType = retro_system_timing
-    public typealias ArcadiaVariableType = retro_variable
     
-
     public var paused = false
     public var initialized = false
     public var mainGameLoop : Timer? = nil
