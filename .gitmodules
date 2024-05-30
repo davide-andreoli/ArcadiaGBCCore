@@ -4,3 +4,6 @@
 [submodule "LibretroGearboy/Gearboy"]
 	path = LibretroGearboy/Gearboy
 	url = https://github.com/drhelius/Gearboy
+[submodule "LibretroGearboyStatic/Gearboy"]
+	path = LibretroGearboyStatic/Gearboy
+	url = https://github.com/drhelius/Gearboy.git
