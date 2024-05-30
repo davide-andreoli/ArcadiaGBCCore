@@ -1136,6 +1136,7 @@
 				OTHER_CFLAGS = (
 					"-D__LIBRETRO__",
 					"-DGEARBOY_DISABLE_DISASSEMBLER",
+					"-Wall",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
@@ -1169,6 +1170,7 @@
 				OTHER_CFLAGS = (
 					"-D__LIBRETRO__",
 					"-DGEARBOY_DISABLE_DISASSEMBLER",
+					"-Wall",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
