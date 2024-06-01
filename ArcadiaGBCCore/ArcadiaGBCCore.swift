@@ -23,6 +23,7 @@ import AVFoundation
     public var loadedGame: URL? = nil
     public var audioVideoInfo: retro_system_av_info = retro_system_av_info(geometry: retro_game_geometry(base_width: 160, base_height: 144, max_width: 160, max_height: 144, aspect_ratio: 1.1111112), timing: retro_system_timing(fps: 59.72750056960583, sample_rate: 44100))
     public var initialSaveRamSnapshot: [UInt8]? = nil
+    public var currentSaveRamSnapshot: [UInt32 : [UInt8]]? = [:]
     
     public init() {
     }
