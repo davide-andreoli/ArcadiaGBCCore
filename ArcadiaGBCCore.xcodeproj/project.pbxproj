@@ -36,7 +36,8 @@
 		952C021B2C084B4000DF2832 /* RomOnlyMemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01D22C084B3F00DF2832 /* RomOnlyMemoryRule.cpp */; };
 		952C021C2C084B4000DF2832 /* Video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01D52C084B3F00DF2832 /* Video.cpp */; };
 		952C021E2C084C1800DF2832 /* GBCCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 952C021D2C084C1800DF2832 /* GBCCore.m */; };
-		952C021F2C084C2900DF2832 /* libLibretroGearboyStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 952C007C2C084B1700DF2832 /* libLibretroGearboyStatic.a */; };
+		952C3BE22C0CE09800DF2832 /* LibretroGearboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */; };
+		952C3BE32C0CE09800DF2832 /* LibretroGearboy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		954561882BE002B100113B8A /* ArcadiaGBCCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 954561872BE002B100113B8A /* ArcadiaGBCCore.docc */; };
 		9545618E2BE002B100113B8A /* ArcadiaGBCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954561832BE002B100113B8A /* ArcadiaGBCCore.framework */; };
 		954561932BE002B100113B8A /* iRetroGBCCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954561922BE002B100113B8A /* iRetroGBCCoreTests.swift */; };
@@ -125,12 +126,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		952C02202C084C2900DF2832 /* PBXContainerItemProxy */ = {
+		952C3BE42C0CE09800DF2832 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9545617A2BE002B100113B8A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 952C007B2C084B1700DF2832;
-			remoteInfo = LibretroGearboyStatic;
+			remoteGlobalIDString = 955CC0CF2BF78BE200C930ED;
+			remoteInfo = LibretroGearboy;
 		};
 		9545618F2BE002B100113B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -166,6 +167,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				956F842C2BF48EE40025FC5F /* ArcadiaCore.framework in Embed Frameworks */,
+				952C3BE32C0CE09800DF2832 /* LibretroGearboy.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,8 +355,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				952C021F2C084C2900DF2832 /* libLibretroGearboyStatic.a in Frameworks */,
 				956F842B2BF48EE40025FC5F /* ArcadiaCore.framework in Frameworks */,
+				952C3BE22C0CE09800DF2832 /* LibretroGearboy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,7 +844,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				952C02212C084C2900DF2832 /* PBXTargetDependency */,
+				952C3BE52C0CE09800DF2832 /* PBXTargetDependency */,
 			);
 			name = ArcadiaGBCCore;
 			productName = iRetroGBCCore;
@@ -1096,10 +1098,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		952C02212C084C2900DF2832 /* PBXTargetDependency */ = {
+		952C3BE52C0CE09800DF2832 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 952C007B2C084B1700DF2832 /* LibretroGearboyStatic */;
-			targetProxy = 952C02202C084C2900DF2832 /* PBXContainerItemProxy */;
+			target = 955CC0CF2BF78BE200C930ED /* LibretroGearboy */;
+			targetProxy = 952C3BE42C0CE09800DF2832 /* PBXContainerItemProxy */;
 		};
 		954561902BE002B100113B8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1490,6 +1492,14 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_CFLAGS = (
+					"-DGEARBOY_DISABLE_DISASSEMBLER",
+					"-D__LIBRETRO__",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-O3",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davideandreoli.LibretroGearboy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
@@ -1540,6 +1550,14 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_CFLAGS = (
+					"-DGEARBOY_DISABLE_DISASSEMBLER",
+					"-D__LIBRETRO__",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-O3",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davideandreoli.LibretroGearboy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
