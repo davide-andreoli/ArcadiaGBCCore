@@ -7,34 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		952C00802C084B1700DF2832 /* LibretroGearboyStatic.m in Sources */ = {isa = PBXBuildFile; fileRef = 952C007F2C084B1700DF2832 /* LibretroGearboyStatic.m */; };
-		952C00812C084B1700DF2832 /* LibretroGearboyStatic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 952C007E2C084B1700DF2832 /* LibretroGearboyStatic.h */; };
-		952C01F02C084B4000DF2832 /* libretro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C00C02C084B3F00DF2832 /* libretro.cpp */; };
-		952C02042C084B4000DF2832 /* Blip_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C019E2C084B3F00DF2832 /* Blip_Buffer.cpp */; };
-		952C02052C084B4000DF2832 /* Effects_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01A12C084B3F00DF2832 /* Effects_Buffer.cpp */; };
-		952C02062C084B4000DF2832 /* Gb_Apu_State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01A32C084B3F00DF2832 /* Gb_Apu_State.cpp */; };
-		952C02072C084B4000DF2832 /* Gb_Apu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01A42C084B3F00DF2832 /* Gb_Apu.cpp */; };
-		952C02082C084B4000DF2832 /* Gb_Oscs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01A62C084B3F00DF2832 /* Gb_Oscs.cpp */; };
-		952C02092C084B4000DF2832 /* Multi_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01A82C084B3F00DF2832 /* Multi_Buffer.cpp */; };
-		952C020A2C084B4000DF2832 /* miniz.c in Sources */ = {isa = PBXBuildFile; fileRef = 952C01AB2C084B3F00DF2832 /* miniz.c */; };
-		952C020B2C084B4000DF2832 /* Audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01AE2C084B3F00DF2832 /* Audio.cpp */; };
-		952C020C2C084B4000DF2832 /* Cartridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01B02C084B3F00DF2832 /* Cartridge.cpp */; };
-		952C020D2C084B4000DF2832 /* CommonMemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01B22C084B3F00DF2832 /* CommonMemoryRule.cpp */; };
-		952C020E2C084B4000DF2832 /* GearboyCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01B62C084B3F00DF2832 /* GearboyCore.cpp */; };
-		952C020F2C084B4000DF2832 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01B82C084B3F00DF2832 /* Input.cpp */; };
-		952C02102C084B4000DF2832 /* IORegistersMemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01BA2C084B3F00DF2832 /* IORegistersMemoryRule.cpp */; };
-		952C02112C084B4000DF2832 /* MBC1MemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01BC2C084B3F00DF2832 /* MBC1MemoryRule.cpp */; };
-		952C02122C084B4000DF2832 /* MBC2MemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01BE2C084B3F00DF2832 /* MBC2MemoryRule.cpp */; };
-		952C02132C084B4000DF2832 /* MBC3MemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01C02C084B3F00DF2832 /* MBC3MemoryRule.cpp */; };
-		952C02142C084B4000DF2832 /* MBC5MemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01C22C084B3F00DF2832 /* MBC5MemoryRule.cpp */; };
-		952C02152C084B4000DF2832 /* Memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01C52C084B3F00DF2832 /* Memory.cpp */; };
-		952C02162C084B4000DF2832 /* MemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01C72C084B3F00DF2832 /* MemoryRule.cpp */; };
-		952C02172C084B4000DF2832 /* MultiMBC1MemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01C92C084B3F00DF2832 /* MultiMBC1MemoryRule.cpp */; };
-		952C02182C084B4000DF2832 /* opcodes_cb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01CD2C084B3F00DF2832 /* opcodes_cb.cpp */; };
-		952C02192C084B4000DF2832 /* opcodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01CE2C084B3F00DF2832 /* opcodes.cpp */; };
-		952C021A2C084B4000DF2832 /* Processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01D02C084B3F00DF2832 /* Processor.cpp */; };
-		952C021B2C084B4000DF2832 /* RomOnlyMemoryRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01D22C084B3F00DF2832 /* RomOnlyMemoryRule.cpp */; };
-		952C021C2C084B4000DF2832 /* Video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 952C01D52C084B3F00DF2832 /* Video.cpp */; };
 		952C021E2C084C1800DF2832 /* GBCCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 952C021D2C084C1800DF2832 /* GBCCore.m */; };
 		952C3BE22C0CE09800DF2832 /* LibretroGearboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */; };
 		952C3BE32C0CE09800DF2832 /* LibretroGearboy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -150,16 +122,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		952C007A2C084B1700DF2832 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				952C00812C084B1700DF2832 /* LibretroGearboyStatic.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		95456BE62BE2ADED00113B8A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,84 +137,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		952C007C2C084B1700DF2832 /* libLibretroGearboyStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibretroGearboyStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		952C007E2C084B1700DF2832 /* LibretroGearboyStatic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibretroGearboyStatic.h; sourceTree = "<group>"; };
-		952C007F2C084B1700DF2832 /* LibretroGearboyStatic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibretroGearboyStatic.m; sourceTree = "<group>"; };
-		952C00852C084B3F00DF2832 /* gearboy.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = gearboy.yml; sourceTree = "<group>"; };
-		952C00872C084B3F00DF2832 /* FUNDING.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = FUNDING.yml; sourceTree = "<group>"; };
-		952C00BC2C084B3F00DF2832 /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
-		952C00BD2C084B3F00DF2832 /* Application.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Application.mk; sourceTree = "<group>"; };
-		952C00BF2C084B3F00DF2832 /* gearboy_libretro.info */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gearboy_libretro.info; sourceTree = "<group>"; };
-		952C00C02C084B3F00DF2832 /* libretro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = libretro.cpp; sourceTree = "<group>"; };
-		952C00C12C084B3F00DF2832 /* libretro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libretro.h; sourceTree = "<group>"; };
-		952C00C22C084B3F00DF2832 /* link.T */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = link.T; sourceTree = "<group>"; };
-		952C00C32C084B3F00DF2832 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		952C00C42C084B3F00DF2832 /* Makefile.common */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.common; sourceTree = "<group>"; };
-		952C01982C084B3F00DF2832 /* gamecontrollerdb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gamecontrollerdb.txt; sourceTree = "<group>"; };
-		952C01992C084B3F00DF2832 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		952C019B2C084B3F00DF2832 /* blargg_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blargg_common.h; sourceTree = "<group>"; };
-		952C019C2C084B3F00DF2832 /* blargg_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blargg_config.h; sourceTree = "<group>"; };
-		952C019D2C084B3F00DF2832 /* blargg_source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blargg_source.h; sourceTree = "<group>"; };
-		952C019E2C084B3F00DF2832 /* Blip_Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Blip_Buffer.cpp; sourceTree = "<group>"; };
-		952C019F2C084B3F00DF2832 /* Blip_Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blip_Buffer.h; sourceTree = "<group>"; };
-		952C01A02C084B3F00DF2832 /* Blip_Synth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blip_Synth.h; sourceTree = "<group>"; };
-		952C01A12C084B3F00DF2832 /* Effects_Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Effects_Buffer.cpp; sourceTree = "<group>"; };
-		952C01A22C084B3F00DF2832 /* Effects_Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Effects_Buffer.h; sourceTree = "<group>"; };
-		952C01A32C084B3F00DF2832 /* Gb_Apu_State.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gb_Apu_State.cpp; sourceTree = "<group>"; };
-		952C01A42C084B3F00DF2832 /* Gb_Apu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gb_Apu.cpp; sourceTree = "<group>"; };
-		952C01A52C084B3F00DF2832 /* Gb_Apu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gb_Apu.h; sourceTree = "<group>"; };
-		952C01A62C084B3F00DF2832 /* Gb_Oscs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gb_Oscs.cpp; sourceTree = "<group>"; };
-		952C01A72C084B3F00DF2832 /* Gb_Oscs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gb_Oscs.h; sourceTree = "<group>"; };
-		952C01A82C084B3F00DF2832 /* Multi_Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Multi_Buffer.cpp; sourceTree = "<group>"; };
-		952C01A92C084B3F00DF2832 /* Multi_Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Multi_Buffer.h; sourceTree = "<group>"; };
-		952C01AB2C084B3F00DF2832 /* miniz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = miniz.c; sourceTree = "<group>"; };
-		952C01AC2C084B3F00DF2832 /* miniz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = miniz.h; sourceTree = "<group>"; };
-		952C01AE2C084B3F00DF2832 /* Audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Audio.cpp; sourceTree = "<group>"; };
-		952C01AF2C084B3F00DF2832 /* Audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
-		952C01B02C084B3F00DF2832 /* Cartridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cartridge.cpp; sourceTree = "<group>"; };
-		952C01B12C084B3F00DF2832 /* Cartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cartridge.h; sourceTree = "<group>"; };
-		952C01B22C084B3F00DF2832 /* CommonMemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommonMemoryRule.cpp; sourceTree = "<group>"; };
-		952C01B32C084B3F00DF2832 /* CommonMemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMemoryRule.h; sourceTree = "<group>"; };
-		952C01B42C084B3F00DF2832 /* definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
-		952C01B52C084B3F00DF2832 /* gearboy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gearboy.h; sourceTree = "<group>"; };
-		952C01B62C084B3F00DF2832 /* GearboyCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GearboyCore.cpp; sourceTree = "<group>"; };
-		952C01B72C084B3F00DF2832 /* GearboyCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GearboyCore.h; sourceTree = "<group>"; };
-		952C01B82C084B3F00DF2832 /* Input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Input.cpp; sourceTree = "<group>"; };
-		952C01B92C084B3F00DF2832 /* Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input.h; sourceTree = "<group>"; };
-		952C01BA2C084B3F00DF2832 /* IORegistersMemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IORegistersMemoryRule.cpp; sourceTree = "<group>"; };
-		952C01BB2C084B3F00DF2832 /* IORegistersMemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IORegistersMemoryRule.h; sourceTree = "<group>"; };
-		952C01BC2C084B3F00DF2832 /* MBC1MemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBC1MemoryRule.cpp; sourceTree = "<group>"; };
-		952C01BD2C084B3F00DF2832 /* MBC1MemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBC1MemoryRule.h; sourceTree = "<group>"; };
-		952C01BE2C084B3F00DF2832 /* MBC2MemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBC2MemoryRule.cpp; sourceTree = "<group>"; };
-		952C01BF2C084B3F00DF2832 /* MBC2MemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBC2MemoryRule.h; sourceTree = "<group>"; };
-		952C01C02C084B3F00DF2832 /* MBC3MemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBC3MemoryRule.cpp; sourceTree = "<group>"; };
-		952C01C12C084B3F00DF2832 /* MBC3MemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBC3MemoryRule.h; sourceTree = "<group>"; };
-		952C01C22C084B3F00DF2832 /* MBC5MemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MBC5MemoryRule.cpp; sourceTree = "<group>"; };
-		952C01C32C084B3F00DF2832 /* MBC5MemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBC5MemoryRule.h; sourceTree = "<group>"; };
-		952C01C42C084B3F00DF2832 /* Memory_inline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memory_inline.h; sourceTree = "<group>"; };
-		952C01C52C084B3F00DF2832 /* Memory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Memory.cpp; sourceTree = "<group>"; };
-		952C01C62C084B3F00DF2832 /* Memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
-		952C01C72C084B3F00DF2832 /* MemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryRule.cpp; sourceTree = "<group>"; };
-		952C01C82C084B3F00DF2832 /* MemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryRule.h; sourceTree = "<group>"; };
-		952C01C92C084B3F00DF2832 /* MultiMBC1MemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiMBC1MemoryRule.cpp; sourceTree = "<group>"; };
-		952C01CA2C084B3F00DF2832 /* MultiMBC1MemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiMBC1MemoryRule.h; sourceTree = "<group>"; };
-		952C01CB2C084B3F00DF2832 /* opcode_names.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opcode_names.h; sourceTree = "<group>"; };
-		952C01CC2C084B3F00DF2832 /* opcode_timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opcode_timing.h; sourceTree = "<group>"; };
-		952C01CD2C084B3F00DF2832 /* opcodes_cb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = opcodes_cb.cpp; sourceTree = "<group>"; };
-		952C01CE2C084B3F00DF2832 /* opcodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = opcodes.cpp; sourceTree = "<group>"; };
-		952C01CF2C084B3F00DF2832 /* Processor_inline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor_inline.h; sourceTree = "<group>"; };
-		952C01D02C084B3F00DF2832 /* Processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processor.cpp; sourceTree = "<group>"; };
-		952C01D12C084B3F00DF2832 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
-		952C01D22C084B3F00DF2832 /* RomOnlyMemoryRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RomOnlyMemoryRule.cpp; sourceTree = "<group>"; };
-		952C01D32C084B3F00DF2832 /* RomOnlyMemoryRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RomOnlyMemoryRule.h; sourceTree = "<group>"; };
-		952C01D42C084B3F00DF2832 /* SixteenBitRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixteenBitRegister.h; sourceTree = "<group>"; };
-		952C01D52C084B3F00DF2832 /* Video.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Video.cpp; sourceTree = "<group>"; };
-		952C01D62C084B3F00DF2832 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
-		952C01D82C084B3F00DF2832 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		952C01D92C084B3F00DF2832 /* .gitlab-ci.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = ".gitlab-ci.yml"; sourceTree = "<group>"; };
-		952C01DA2C084B3F00DF2832 /* backers.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = backers.md; sourceTree = "<group>"; };
-		952C01DB2C084B3F00DF2832 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		952C01DC2C084B3F00DF2832 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		952C021D2C084C1800DF2832 /* GBCCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBCCore.m; sourceTree = "<group>"; };
 		954561832BE002B100113B8A /* ArcadiaGBCCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArcadiaGBCCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		954561862BE002B100113B8A /* ArcadiaGBCCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcadiaGBCCore.h; sourceTree = "<group>"; };
@@ -344,13 +228,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		952C00792C084B1700DF2832 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		954561802BE002B100113B8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,162 +263,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		952C007D2C084B1700DF2832 /* LibretroGearboyStatic */ = {
-			isa = PBXGroup;
-			children = (
-				952C01DD2C084B3F00DF2832 /* Gearboy */,
-				952C007E2C084B1700DF2832 /* LibretroGearboyStatic.h */,
-				952C007F2C084B1700DF2832 /* LibretroGearboyStatic.m */,
-			);
-			path = LibretroGearboyStatic;
-			sourceTree = "<group>";
-		};
-		952C00862C084B3F00DF2832 /* workflows */ = {
-			isa = PBXGroup;
-			children = (
-				952C00852C084B3F00DF2832 /* gearboy.yml */,
-			);
-			path = workflows;
-			sourceTree = "<group>";
-		};
-		952C00882C084B3F00DF2832 /* .github */ = {
-			isa = PBXGroup;
-			children = (
-				952C00862C084B3F00DF2832 /* workflows */,
-				952C00872C084B3F00DF2832 /* FUNDING.yml */,
-			);
-			path = .github;
-			sourceTree = "<group>";
-		};
-		952C00BE2C084B3F00DF2832 /* jni */ = {
-			isa = PBXGroup;
-			children = (
-				952C00BC2C084B3F00DF2832 /* Android.mk */,
-				952C00BD2C084B3F00DF2832 /* Application.mk */,
-			);
-			path = jni;
-			sourceTree = "<group>";
-		};
-		952C00C52C084B3F00DF2832 /* libretro */ = {
-			isa = PBXGroup;
-			children = (
-				952C00BE2C084B3F00DF2832 /* jni */,
-				952C00BF2C084B3F00DF2832 /* gearboy_libretro.info */,
-				952C00C02C084B3F00DF2832 /* libretro.cpp */,
-				952C00C12C084B3F00DF2832 /* libretro.h */,
-				952C00C22C084B3F00DF2832 /* link.T */,
-				952C00C32C084B3F00DF2832 /* Makefile */,
-				952C00C42C084B3F00DF2832 /* Makefile.common */,
-			);
-			path = libretro;
-			sourceTree = "<group>";
-		};
-		952C019A2C084B3F00DF2832 /* platforms */ = {
-			isa = PBXGroup;
-			children = (
-				952C00C52C084B3F00DF2832 /* libretro */,
-				952C01982C084B3F00DF2832 /* gamecontrollerdb.txt */,
-				952C01992C084B3F00DF2832 /* README.txt */,
-			);
-			path = platforms;
-			sourceTree = "<group>";
-		};
-		952C01AA2C084B3F00DF2832 /* audio */ = {
-			isa = PBXGroup;
-			children = (
-				952C019B2C084B3F00DF2832 /* blargg_common.h */,
-				952C019C2C084B3F00DF2832 /* blargg_config.h */,
-				952C019D2C084B3F00DF2832 /* blargg_source.h */,
-				952C019E2C084B3F00DF2832 /* Blip_Buffer.cpp */,
-				952C019F2C084B3F00DF2832 /* Blip_Buffer.h */,
-				952C01A02C084B3F00DF2832 /* Blip_Synth.h */,
-				952C01A12C084B3F00DF2832 /* Effects_Buffer.cpp */,
-				952C01A22C084B3F00DF2832 /* Effects_Buffer.h */,
-				952C01A32C084B3F00DF2832 /* Gb_Apu_State.cpp */,
-				952C01A42C084B3F00DF2832 /* Gb_Apu.cpp */,
-				952C01A52C084B3F00DF2832 /* Gb_Apu.h */,
-				952C01A62C084B3F00DF2832 /* Gb_Oscs.cpp */,
-				952C01A72C084B3F00DF2832 /* Gb_Oscs.h */,
-				952C01A82C084B3F00DF2832 /* Multi_Buffer.cpp */,
-				952C01A92C084B3F00DF2832 /* Multi_Buffer.h */,
-			);
-			path = audio;
-			sourceTree = "<group>";
-		};
-		952C01AD2C084B3F00DF2832 /* miniz */ = {
-			isa = PBXGroup;
-			children = (
-				952C01AB2C084B3F00DF2832 /* miniz.c */,
-				952C01AC2C084B3F00DF2832 /* miniz.h */,
-			);
-			path = miniz;
-			sourceTree = "<group>";
-		};
-		952C01D72C084B3F00DF2832 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				952C01AA2C084B3F00DF2832 /* audio */,
-				952C01AD2C084B3F00DF2832 /* miniz */,
-				952C01AE2C084B3F00DF2832 /* Audio.cpp */,
-				952C01AF2C084B3F00DF2832 /* Audio.h */,
-				952C01B02C084B3F00DF2832 /* Cartridge.cpp */,
-				952C01B12C084B3F00DF2832 /* Cartridge.h */,
-				952C01B22C084B3F00DF2832 /* CommonMemoryRule.cpp */,
-				952C01B32C084B3F00DF2832 /* CommonMemoryRule.h */,
-				952C01B42C084B3F00DF2832 /* definitions.h */,
-				952C01B52C084B3F00DF2832 /* gearboy.h */,
-				952C01B62C084B3F00DF2832 /* GearboyCore.cpp */,
-				952C01B72C084B3F00DF2832 /* GearboyCore.h */,
-				952C01B82C084B3F00DF2832 /* Input.cpp */,
-				952C01B92C084B3F00DF2832 /* Input.h */,
-				952C01BA2C084B3F00DF2832 /* IORegistersMemoryRule.cpp */,
-				952C01BB2C084B3F00DF2832 /* IORegistersMemoryRule.h */,
-				952C01BC2C084B3F00DF2832 /* MBC1MemoryRule.cpp */,
-				952C01BD2C084B3F00DF2832 /* MBC1MemoryRule.h */,
-				952C01BE2C084B3F00DF2832 /* MBC2MemoryRule.cpp */,
-				952C01BF2C084B3F00DF2832 /* MBC2MemoryRule.h */,
-				952C01C02C084B3F00DF2832 /* MBC3MemoryRule.cpp */,
-				952C01C12C084B3F00DF2832 /* MBC3MemoryRule.h */,
-				952C01C22C084B3F00DF2832 /* MBC5MemoryRule.cpp */,
-				952C01C32C084B3F00DF2832 /* MBC5MemoryRule.h */,
-				952C01C42C084B3F00DF2832 /* Memory_inline.h */,
-				952C01C52C084B3F00DF2832 /* Memory.cpp */,
-				952C01C62C084B3F00DF2832 /* Memory.h */,
-				952C01C72C084B3F00DF2832 /* MemoryRule.cpp */,
-				952C01C82C084B3F00DF2832 /* MemoryRule.h */,
-				952C01C92C084B3F00DF2832 /* MultiMBC1MemoryRule.cpp */,
-				952C01CA2C084B3F00DF2832 /* MultiMBC1MemoryRule.h */,
-				952C01CB2C084B3F00DF2832 /* opcode_names.h */,
-				952C01CC2C084B3F00DF2832 /* opcode_timing.h */,
-				952C01CD2C084B3F00DF2832 /* opcodes_cb.cpp */,
-				952C01CE2C084B3F00DF2832 /* opcodes.cpp */,
-				952C01CF2C084B3F00DF2832 /* Processor_inline.h */,
-				952C01D02C084B3F00DF2832 /* Processor.cpp */,
-				952C01D12C084B3F00DF2832 /* Processor.h */,
-				952C01D22C084B3F00DF2832 /* RomOnlyMemoryRule.cpp */,
-				952C01D32C084B3F00DF2832 /* RomOnlyMemoryRule.h */,
-				952C01D42C084B3F00DF2832 /* SixteenBitRegister.h */,
-				952C01D52C084B3F00DF2832 /* Video.cpp */,
-				952C01D62C084B3F00DF2832 /* Video.h */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		952C01DD2C084B3F00DF2832 /* Gearboy */ = {
-			isa = PBXGroup;
-			children = (
-				952C00882C084B3F00DF2832 /* .github */,
-				952C019A2C084B3F00DF2832 /* platforms */,
-				952C01D72C084B3F00DF2832 /* src */,
-				952C01D82C084B3F00DF2832 /* .gitignore */,
-				952C01D92C084B3F00DF2832 /* .gitlab-ci.yml */,
-				952C01DA2C084B3F00DF2832 /* backers.md */,
-				952C01DB2C084B3F00DF2832 /* LICENSE */,
-				952C01DC2C084B3F00DF2832 /* README.md */,
-			);
-			path = Gearboy;
-			sourceTree = "<group>";
-		};
 		954561792BE002B100113B8A = {
 			isa = PBXGroup;
 			children = (
@@ -549,7 +270,6 @@
 				954561912BE002B100113B8A /* ArcadiaGBCCoreTests */,
 				955CC0D12BF78BE200C930ED /* LibretroGearboy */,
 				955CC0DD2BF78BE300C930ED /* LibretroGearboyTests */,
-				952C007D2C084B1700DF2832 /* LibretroGearboyStatic */,
 				954561842BE002B100113B8A /* Products */,
 				95456BE22BE2ADED00113B8A /* Frameworks */,
 			);
@@ -562,7 +282,6 @@
 				9545618D2BE002B100113B8A /* ArcadiaGBCCoreTests.xctest */,
 				955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */,
 				955CC0D92BF78BE300C930ED /* LibretroGearboyTests.xctest */,
-				952C007C2C084B1700DF2832 /* libLibretroGearboyStatic.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -814,23 +533,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		952C007B2C084B1700DF2832 /* LibretroGearboyStatic */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 952C00842C084B1700DF2832 /* Build configuration list for PBXNativeTarget "LibretroGearboyStatic" */;
-			buildPhases = (
-				952C00782C084B1700DF2832 /* Sources */,
-				952C00792C084B1700DF2832 /* Frameworks */,
-				952C007A2C084B1700DF2832 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LibretroGearboyStatic;
-			productName = LibretroGearboyStatic;
-			productReference = 952C007C2C084B1700DF2832 /* libLibretroGearboyStatic.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		954561822BE002B100113B8A /* ArcadiaGBCCore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 954561972BE002B100113B8A /* Build configuration list for PBXNativeTarget "ArcadiaGBCCore" */;
@@ -915,9 +617,6 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					952C007B2C084B1700DF2832 = {
-						CreatedOnToolsVersion = 15.4;
-					};
 					954561822BE002B100113B8A = {
 						CreatedOnToolsVersion = 15.3;
 						LastSwiftMigration = 1540;
@@ -950,7 +649,6 @@
 				9545618C2BE002B100113B8A /* ArcadiaGBCCoreTests */,
 				955CC0CF2BF78BE200C930ED /* LibretroGearboy */,
 				955CC0D82BF78BE300C930ED /* LibretroGearboyTests */,
-				952C007B2C084B1700DF2832 /* LibretroGearboyStatic */,
 			);
 		};
 /* End PBXProject section */
@@ -1001,40 +699,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		952C00782C084B1700DF2832 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				952C02132C084B4000DF2832 /* MBC3MemoryRule.cpp in Sources */,
-				952C020D2C084B4000DF2832 /* CommonMemoryRule.cpp in Sources */,
-				952C02112C084B4000DF2832 /* MBC1MemoryRule.cpp in Sources */,
-				952C021A2C084B4000DF2832 /* Processor.cpp in Sources */,
-				952C021B2C084B4000DF2832 /* RomOnlyMemoryRule.cpp in Sources */,
-				952C020C2C084B4000DF2832 /* Cartridge.cpp in Sources */,
-				952C020F2C084B4000DF2832 /* Input.cpp in Sources */,
-				952C02082C084B4000DF2832 /* Gb_Oscs.cpp in Sources */,
-				952C021C2C084B4000DF2832 /* Video.cpp in Sources */,
-				952C02062C084B4000DF2832 /* Gb_Apu_State.cpp in Sources */,
-				952C02122C084B4000DF2832 /* MBC2MemoryRule.cpp in Sources */,
-				952C02162C084B4000DF2832 /* MemoryRule.cpp in Sources */,
-				952C00802C084B1700DF2832 /* LibretroGearboyStatic.m in Sources */,
-				952C020B2C084B4000DF2832 /* Audio.cpp in Sources */,
-				952C01F02C084B4000DF2832 /* libretro.cpp in Sources */,
-				952C02102C084B4000DF2832 /* IORegistersMemoryRule.cpp in Sources */,
-				952C020A2C084B4000DF2832 /* miniz.c in Sources */,
-				952C02172C084B4000DF2832 /* MultiMBC1MemoryRule.cpp in Sources */,
-				952C02092C084B4000DF2832 /* Multi_Buffer.cpp in Sources */,
-				952C02042C084B4000DF2832 /* Blip_Buffer.cpp in Sources */,
-				952C02152C084B4000DF2832 /* Memory.cpp in Sources */,
-				952C02052C084B4000DF2832 /* Effects_Buffer.cpp in Sources */,
-				952C02072C084B4000DF2832 /* Gb_Apu.cpp in Sources */,
-				952C020E2C084B4000DF2832 /* GearboyCore.cpp in Sources */,
-				952C02182C084B4000DF2832 /* opcodes_cb.cpp in Sources */,
-				952C02142C084B4000DF2832 /* MBC5MemoryRule.cpp in Sources */,
-				952C02192C084B4000DF2832 /* opcodes.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9545617F2BE002B100113B8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1116,77 +780,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		952C00822C084B1700DF2832 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 32DR4Q2NF7;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/LibretroGearboyStatic/Gearboy/platforms/windows/dependencies/glew-2.2.0/lib/Release/arm64",
-					"$(PROJECT_DIR)/LibretroGearboyStatic/Gearboy/platforms/windows/dependencies/glew-2.2.0/lib/Release/Win32",
-					"$(PROJECT_DIR)/LibretroGearboyStatic/Gearboy/platforms/windows/dependencies/glew-2.2.0/lib/Release/x64",
-					"$(PROJECT_DIR)/LibretroGearboyStatic/Gearboy/platforms/windows/dependencies/SDL2-2.28.5/lib/arm64",
-					"$(PROJECT_DIR)/LibretroGearboyStatic/Gearboy/platforms/windows/dependencies/SDL2-2.28.5/lib/x64",
-					"$(PROJECT_DIR)/LibretroGearboyStatic/Gearboy/platforms/windows/dependencies/SDL2-2.28.5/lib/x86",
-				);
-				OTHER_CFLAGS = (
-					"-D__LIBRETRO__",
-					"-DGEARBOY_DISABLE_DISASSEMBLER",
-					"-Wall",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"$(OTHER_CFLAGS)",
-					"-O3",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 17.0;
-			};
-			name = Debug;
-		};
-		952C00832C084B1700DF2832 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 32DR4Q2NF7;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/LibretroGearboyStatic/Gearboy/platforms/windows/dependencies/glew-2.2.0/lib/Release/arm64",
-					"$(PROJECT_DIR)/LibretroGearboyStatic/Gearboy/platforms/windows/dependencies/glew-2.2.0/lib/Release/Win32",
-					"$(PROJECT_DIR)/LibretroGearboyStatic/Gearboy/platforms/windows/dependencies/glew-2.2.0/lib/Release/x64",
-					"$(PROJECT_DIR)/LibretroGearboyStatic/Gearboy/platforms/windows/dependencies/SDL2-2.28.5/lib/arm64",
-					"$(PROJECT_DIR)/LibretroGearboyStatic/Gearboy/platforms/windows/dependencies/SDL2-2.28.5/lib/x64",
-					"$(PROJECT_DIR)/LibretroGearboyStatic/Gearboy/platforms/windows/dependencies/SDL2-2.28.5/lib/x86",
-				);
-				OTHER_CFLAGS = (
-					"-D__LIBRETRO__",
-					"-DGEARBOY_DISABLE_DISASSEMBLER",
-					"-Wall",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"$(OTHER_CFLAGS)",
-					"-O3",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 17.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		954561952BE002B100113B8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1351,7 +944,7 @@
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1401,7 +994,7 @@
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
@@ -1615,15 +1208,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		952C00842C084B1700DF2832 /* Build configuration list for PBXNativeTarget "LibretroGearboyStatic" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				952C00822C084B1700DF2832 /* Debug */,
-				952C00832C084B1700DF2832 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		9545617D2BE002B100113B8A /* Build configuration list for PBXProject "ArcadiaGBCCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
