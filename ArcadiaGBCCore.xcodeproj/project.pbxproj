@@ -19,18 +19,8 @@
 		955CC0DA2BF78BE300C930ED /* LibretroGearboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955CC0D02BF78BE200C930ED /* LibretroGearboy.framework */; };
 		955CC0DF2BF78BE300C930ED /* LibretroGearboyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CC0DE2BF78BE300C930ED /* LibretroGearboyTests.swift */; };
 		955CC0E02BF78BE300C930ED /* LibretroGearboy.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC0D22BF78BE200C930ED /* LibretroGearboy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		955CC2402BF78C4000C930ED /* gearboy.yml in Resources */ = {isa = PBXBuildFile; fileRef = 955CC0E72BF78C4000C930ED /* gearboy.yml */; };
-		955CC2412BF78C4000C930ED /* FUNDING.yml in Resources */ = {isa = PBXBuildFile; fileRef = 955CC0E92BF78C4000C930ED /* FUNDING.yml */; };
-		955CC26D2BF78C4000C930ED /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = 955CC11E2BF78C4000C930ED /* Android.mk */; };
-		955CC26E2BF78C4000C930ED /* Application.mk in Resources */ = {isa = PBXBuildFile; fileRef = 955CC11F2BF78C4000C930ED /* Application.mk */; };
-		955CC26F2BF78C4000C930ED /* gearboy_libretro.info in Resources */ = {isa = PBXBuildFile; fileRef = 955CC1212BF78C4000C930ED /* gearboy_libretro.info */; };
 		955CC2702BF78C4000C930ED /* libretro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC1222BF78C4000C930ED /* libretro.cpp */; };
 		955CC2712BF78C4000C930ED /* libretro.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC1232BF78C4000C930ED /* libretro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		955CC2722BF78C4000C930ED /* link.T in Resources */ = {isa = PBXBuildFile; fileRef = 955CC1242BF78C4000C930ED /* link.T */; };
-		955CC2732BF78C4000C930ED /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 955CC1252BF78C4000C930ED /* Makefile */; };
-		955CC2742BF78C4000C930ED /* Makefile.common in Resources */ = {isa = PBXBuildFile; fileRef = 955CC1262BF78C4000C930ED /* Makefile.common */; };
-		955CC32D2BF78C4100C930ED /* gamecontrollerdb.txt in Resources */ = {isa = PBXBuildFile; fileRef = 955CC1FA2BF78C4000C930ED /* gamecontrollerdb.txt */; };
-		955CC32E2BF78C4100C930ED /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 955CC1FB2BF78C4000C930ED /* README.txt */; };
 		955CC32F2BF78C4100C930ED /* blargg_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC1FD2BF78C4000C930ED /* blargg_common.h */; };
 		955CC3302BF78C4100C930ED /* blargg_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC1FE2BF78C4000C930ED /* blargg_config.h */; };
 		955CC3312BF78C4100C930ED /* blargg_source.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC1FF2BF78C4000C930ED /* blargg_source.h */; };
@@ -88,11 +78,6 @@
 		955CC3662BF78C4100C930ED /* SixteenBitRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2362BF78C4000C930ED /* SixteenBitRegister.h */; };
 		955CC3672BF78C4100C930ED /* Video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2372BF78C4000C930ED /* Video.cpp */; };
 		955CC3682BF78C4100C930ED /* Video.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2382BF78C4000C930ED /* Video.h */; };
-		955CC3692BF78C4100C930ED /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 955CC23A2BF78C4000C930ED /* .gitignore */; };
-		955CC36A2BF78C4100C930ED /* .gitlab-ci.yml in Resources */ = {isa = PBXBuildFile; fileRef = 955CC23B2BF78C4000C930ED /* .gitlab-ci.yml */; };
-		955CC36B2BF78C4100C930ED /* backers.md in Resources */ = {isa = PBXBuildFile; fileRef = 955CC23C2BF78C4000C930ED /* backers.md */; };
-		955CC36C2BF78C4100C930ED /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 955CC23D2BF78C4000C930ED /* LICENSE */; };
-		955CC36D2BF78C4100C930ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 955CC23E2BF78C4000C930ED /* README.md */; };
 		956F842B2BF48EE40025FC5F /* ArcadiaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */; };
 		956F842C2BF48EE40025FC5F /* ArcadiaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -672,20 +657,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				955CC26F2BF78C4000C930ED /* gearboy_libretro.info in Resources */,
-				955CC26D2BF78C4000C930ED /* Android.mk in Resources */,
-				955CC2412BF78C4000C930ED /* FUNDING.yml in Resources */,
-				955CC2742BF78C4000C930ED /* Makefile.common in Resources */,
-				955CC32D2BF78C4100C930ED /* gamecontrollerdb.txt in Resources */,
-				955CC36A2BF78C4100C930ED /* .gitlab-ci.yml in Resources */,
-				955CC32E2BF78C4100C930ED /* README.txt in Resources */,
-				955CC36C2BF78C4100C930ED /* LICENSE in Resources */,
-				955CC36D2BF78C4100C930ED /* README.md in Resources */,
-				955CC3692BF78C4100C930ED /* .gitignore in Resources */,
-				955CC26E2BF78C4000C930ED /* Application.mk in Resources */,
-				955CC2722BF78C4000C930ED /* link.T in Resources */,
-				955CC2402BF78C4000C930ED /* gearboy.yml in Resources */,
-				955CC36B2BF78C4100C930ED /* backers.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,7 +708,6 @@
 				955CC3402BF78C4100C930ED /* Audio.cpp in Sources */,
 				955CC2702BF78C4000C930ED /* libretro.cpp in Sources */,
 				955CC34C2BF78C4100C930ED /* IORegistersMemoryRule.cpp in Sources */,
-				955CC2732BF78C4000C930ED /* Makefile in Sources */,
 				955CC35B2BF78C4100C930ED /* MultiMBC1MemoryRule.cpp in Sources */,
 				955CC33C2BF78C4100C930ED /* Multi_Buffer.cpp in Sources */,
 				955CC3322BF78C4100C930ED /* Blip_Buffer.cpp in Sources */,
