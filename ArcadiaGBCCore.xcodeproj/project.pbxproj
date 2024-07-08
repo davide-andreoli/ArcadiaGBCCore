@@ -78,8 +78,8 @@
 		955CC3662BF78C4100C930ED /* SixteenBitRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2362BF78C4000C930ED /* SixteenBitRegister.h */; };
 		955CC3672BF78C4100C930ED /* Video.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 955CC2372BF78C4000C930ED /* Video.cpp */; };
 		955CC3682BF78C4100C930ED /* Video.h in Headers */ = {isa = PBXBuildFile; fileRef = 955CC2382BF78C4000C930ED /* Video.h */; };
-		956F842B2BF48EE40025FC5F /* ArcadiaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */; };
-		956F842C2BF48EE40025FC5F /* ArcadiaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95CC72022C3AEF16009FB8DD /* ArcadiaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */; };
+		95CC72112C3AF017009FB8DD /* ArcadiaGBCCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC72102C3AF017009FB8DD /* ArcadiaGBCCore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,7 +113,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				956F842C2BF48EE40025FC5F /* ArcadiaCore.framework in Embed Frameworks */,
 				952C3BE32C0CE09800DF2832 /* LibretroGearboy.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -210,6 +209,7 @@
 		955CC23D2BF78C4000C930ED /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		955CC23E2BF78C4000C930ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		956F842A2BF48EE40025FC5F /* ArcadiaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ArcadiaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95CC72102C3AF017009FB8DD /* ArcadiaGBCCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadiaGBCCore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,7 +217,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				956F842B2BF48EE40025FC5F /* ArcadiaCore.framework in Frameworks */,
 				952C3BE22C0CE09800DF2832 /* LibretroGearboy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +233,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95CC72022C3AEF16009FB8DD /* ArcadiaCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +304,7 @@
 				955CC23F2BF78C4000C930ED /* Gearboy */,
 				955CC0D22BF78BE200C930ED /* LibretroGearboy.h */,
 				955CC0D32BF78BE200C930ED /* LibretroGearboy.docc */,
+				95CC72102C3AF017009FB8DD /* ArcadiaGBCCore.swift */,
 			);
 			path = LibretroGearboy;
 			sourceTree = "<group>";
@@ -611,6 +612,7 @@
 					};
 					955CC0CF2BF78BE200C930ED = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1540;
 					};
 					955CC0D82BF78BE300C930ED = {
 						CreatedOnToolsVersion = 15.3;
@@ -699,6 +701,7 @@
 				955CC3642BF78C4100C930ED /* RomOnlyMemoryRule.cpp in Sources */,
 				955CC3422BF78C4100C930ED /* Cartridge.cpp in Sources */,
 				955CC34A2BF78C4100C930ED /* Input.cpp in Sources */,
+				95CC72112C3AF017009FB8DD /* ArcadiaGBCCore.swift in Sources */,
 				955CC33A2BF78C4100C930ED /* Gb_Oscs.cpp in Sources */,
 				955CC3672BF78C4100C930ED /* Video.cpp in Sources */,
 				955CC3372BF78C4100C930ED /* Gb_Apu_State.cpp in Sources */,
@@ -1022,6 +1025,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1070,6 +1074,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1080,6 +1085,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1137,6 +1143,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32DR4Q2NF7;
@@ -1158,6 +1165,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32DR4Q2NF7;
