@@ -12,7 +12,6 @@ import Observation
 import CoreGraphics
 import CoreVideo
 import AVFoundation
-import LibretroGearboy
 
 @Observable public class ArcadiaGBC: ArcadiaCoreProtocol {    
     

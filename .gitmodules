@@ -7,3 +7,6 @@
 [submodule "LibretroGearboyStatic/Gearboy"]
 	path = LibretroGearboyStatic/Gearboy
 	url = https://github.com/drhelius/Gearboy.git
+[submodule "ArcadiaGBCCore/Gearboy"]
+	path = ArcadiaGBCCore/Gearboy
+	url = https://github.com/drhelius/Gearboy.git
